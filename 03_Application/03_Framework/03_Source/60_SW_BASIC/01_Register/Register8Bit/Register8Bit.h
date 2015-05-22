@@ -68,8 +68,30 @@ class Register8Bit : public Register<volatile Register8Bit_t,vuint8_t>
 
 /*=== Functions ===============================================================*/
    public:   //Functions
+   /**
+    *  \brief Brief
+    *  
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    Register8Bit(void);
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] sReg Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    Register8Bit(vuint8_t& sReg);
+   /**
+    *  \brief Brief
+    *  
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    ~Register8Bit(void);
 
    protected:   //Functions

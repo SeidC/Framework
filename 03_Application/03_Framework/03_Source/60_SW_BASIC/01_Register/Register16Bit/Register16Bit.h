@@ -68,8 +68,30 @@ class Register16Bit : public Register<volatile Register16Bit_t, vuint16_t>
 
 /*=== Functions ===============================================================*/
    public:   //Functions
+   /**
+    *  \brief Brief
+    *  
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    Register16Bit(void);
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] sReg Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    Register16Bit(vuint16_t& sReg);
+   /**
+    *  \brief Brief
+    *  
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    ~Register16Bit(void);
 
    protected:   //Functions

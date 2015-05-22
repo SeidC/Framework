@@ -54,10 +54,41 @@ class Port : public IoPortAbs
 {
 /*=== Enumerates ===========================================================*/
    public:
-
+    /**
+    *  \brief Brief
+    *  
+    *  \param [in] pin Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    void set(Pin_t pin);
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] bitMask Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    void setByMask(uint8_t bitMask);
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] pin Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    void clear(Pin_t pin);
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] bitMask Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    void clearByMask(uint8_t bitMask);
 
 
@@ -76,8 +107,30 @@ class Port : public IoPortAbs
 
 /*=== Functions ===============================================================*/
    public:
+   /**
+    *  \brief Brief
+    *  
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    Port(void);
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] port Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    Port(IoPort_t& port);
+   /**
+    *  \brief Brief
+    *  
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    ~Port(void);
 
 
@@ -86,6 +139,14 @@ class Port : public IoPortAbs
 
 
    private:
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] c Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    Port(const Port &c);
    Port& operator=(const Port &c);
 

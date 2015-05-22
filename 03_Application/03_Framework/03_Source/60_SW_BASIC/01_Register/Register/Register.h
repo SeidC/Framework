@@ -108,15 +108,69 @@ class Register : Object
    protected:
 /*=== Functions ==============================================================*/
    public:
+      /**
+       *  \brief Brief
+       *  
+       *  \return Return_Description
+       *  
+       *  \details Details
+       */
       Register(void);
+	  
       Register (D& sReg);
+      /**
+       *  \brief Brief
+       *  
+       *  \return Return_Description
+       *  
+       *  \details Details
+       */
       ~Register(void);
-
-      INLINE void setRegister(U& sReg);
-      INLINE void setRegister(D& sReg);
-      INLINE void setBit(Bit_t bit);
-      INLINE void clearBit(Bit_t bit);
-      INLINE Status_t getBit(Bit_t bit);
+      /**
+       *  \brief Brief
+       *  
+       *  \param [in] sReg Parameter_Description
+       *  \return Return_Description
+       *  
+       *  \details Details
+       */
+       void setRegister(U& sReg);
+      	  /**
+       *  \brief Brief
+       *  
+       *  \param [in] sReg Parameter_Description
+       *  \return Return_Description
+       *  
+       *  \details Details
+       */
+       void setRegister(D& sReg);
+      	  /**
+       *  \brief Brief
+       *  
+       *  \param [in] bit Parameter_Description
+       *  \return Return_Description
+       *  
+       *  \details Details
+       */
+       void setBit(Bit_t bit);
+      	  /**
+       *  \brief Brief
+       *  
+       *  \param [in] bit Parameter_Description
+       *  \return Return_Description
+       *  
+       *  \details Details
+       */
+       void clearBit(Bit_t bit);
+      	  /**
+       *  \brief Brief
+       *  
+       *  \param [in] bit Parameter_Description
+       *  \return Return_Description
+       *  
+       *  \details Details
+       */
+       Status_t getBit(Bit_t bit);
       
    private:
 

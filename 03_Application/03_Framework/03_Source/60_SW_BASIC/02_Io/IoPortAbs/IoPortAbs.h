@@ -72,16 +72,75 @@ class IoPortAbs : public Io
 
    /*=== Functions ===============================================================*/
    public:
+   /**
+    *  \brief Brief
+    *  
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    IoPortAbs();
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] port Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    IoPortAbs(IoPort_t& port);
+   /**
+    *  \brief Brief
+    *  
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    ~IoPortAbs();
 
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] pin Parameter_Description
+    *  \param [in] status Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
+   void setIo(Pin_t pin, Status_t status);
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] pin Parameter_Description
+    *  \param [in] dir Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
+   void setIoDirection(Pin_t pin, IODirection_t dir);
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] pin Parameter_Description
+    *  \param [in] pullUp Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
+   void setIoPullUp(Pin_t pin, IOPullup_t pullUp);
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] port Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
+   void setIoPort(IoPort_t& port);
 
    protected:
-   void setIo(Pin_t pin, Status_t status);
-   void setIoDirection(Pin_t pin, IODirection_t dir);
-   void setIoPullUp(Pin_t pin, IOPullup_t pullUp);
-   void setIoPort(IoPort_t& port);
+
+
 
    private:
    IoPortAbs(const IoPortAbs &c);

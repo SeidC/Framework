@@ -68,13 +68,44 @@ class PortPin : public IoPinAbs
 	
 /*=== Functions ===============================================================*/
 	public: //Functions
+		 /**
+		  *  \brief Brief
+		  *  
+		  *  \return Return_Description
+		  *  
+		  *  \details Details
+		  */
 		 PortPin();
+		 /**
+		  *  \brief Brief
+		  *  
+		  *  \param [in] port Parameter_Description
+		  *  \return Return_Description
+		  *  
+		  *  \details Details
+		  */
 		 PortPin(IoPort_t& port);
+		 /**
+		 *  \brief Brief
+		 *  
+		 *  \return Return_Description
+		 *  
+		 *  \details Details
+		 */
 		~PortPin();
 	protected: //Functions
 			
 	private: //Functions
+		/**
+		 *  \brief Brief
+		 *  
+		 *  \param [in] c Parameter_Description
+		 *  \return Return_Description
+		 *  
+		 *  \details Details
+		 */
 		PortPin( const PortPin &c );
+		
 		PortPin& operator=( const PortPin &c );
 		
 }; //PortPin

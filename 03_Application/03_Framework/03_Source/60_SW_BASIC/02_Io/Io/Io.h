@@ -93,21 +93,100 @@ class Io : public Object
 
 /*=== Functions ===============================================================*/
    public:
+   /**
+    *  \brief Brief
+    *  
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    Io(void);
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] port Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    Io(IoPort_t& port);
+   /**
+    *  \brief Brief
+    *  
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    virtual ~Io(void);
 
 
 
    protected:
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] status Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    virtual void setIo(Status_t status) = 0;
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] dir Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    virtual void setIoDirection(IODirection_t dir) = 0;
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] pullUp Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    virtual void setIoPullUp(IOPullup_t pullUp) = 0;
-
+    /**
+    *  \brief Brief
+    *  
+    *  \param [in] pin Parameter_Description
+    *  \param [in] status Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    virtual void setIo(Pin_t pin, Status_t status) = 0;
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] pin Parameter_Description
+    *  \param [in] dir Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    virtual void setIoDirection(Pin_t pin,IODirection_t dir) = 0;
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] pin Parameter_Description
+    *  \param [in] pullUp Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    virtual void setIoPullUp(Pin_t pin, IOPullup_t pullUp) = 0;
-
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] port Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
    virtual void setIoPort(IoPort_t& port) = 0;
 
 

@@ -1,0 +1,880 @@
+Archive member included because of file (symbol)
+
+d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o (exit)
+d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o (__do_copy_data)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+ .bss           0x00000000        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+ .text          0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .data          0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .bss           0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .text._ZN9IoPortAbs5setIoEN6Object5Pin_tENS0_8Status_tE
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .text._ZN9IoPortAbs11setIoPullUpEN6Object5Pin_tEN2Io10IOPullup_tE
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .text._ZN9IoPortAbs14setIoDirectionEN6Object5Pin_tEN2Io13IODirection_tE
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .text._ZN9IoPortAbs9setIoPortER8IoPort_t
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .text._ZN9IoPortAbsD0Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .text._ZN9IoPortAbsD1Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .text._ZN9IoPortAbsD2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .text._ZN9IoPortAbsC1ER8IoPort_t
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .text._ZN9IoPortAbsC2ER8IoPort_t
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .text._ZN9IoPortAbsC1Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .text._ZN9IoPortAbsC2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .rodata._ZTV9IoPortAbs
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+ .text          0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .data          0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .bss           0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .text._ZN8IoPinAbs5setIoEN6Object8Status_tE
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .text._ZN8IoPinAbs14setIoDirectionEN2Io13IODirection_tE
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .text._ZN8IoPinAbs11setIoPullUpEN2Io10IOPullup_tE
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .text._ZN8IoPinAbs9setIoPortER8IoPort_t
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .text._ZN8IoPinAbsD0Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .text._ZN8IoPinAbsD1Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .text._ZN8IoPinAbsD2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .text._ZN8IoPinAbsC1Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .text._ZN8IoPinAbsC2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .text._ZN8IoPinAbsC1ER8IoPort_t
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .text._ZN8IoPinAbsC2ER8IoPort_t
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .rodata._ZTV8IoPinAbs
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+ .text          0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+ .data          0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+ .bss           0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+ .text._ZN6ObjectC2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+ .text._ZN6ObjectD2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+ .text._ZN2IoD0Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+ .text._ZN2IoD1Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+ .text._ZN2IoD2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+ .text._ZN2IoC1Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+ .text._ZN2IoC2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+ .text._ZN2IoC1ER8IoPort_t
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+ .text._ZN2IoC2ER8IoPort_t
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+ .rodata._ZTV2Io
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+ .text          0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io_Cfg.o
+ .data          0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io_Cfg.o
+ .bss           0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io_Cfg.o
+ .data.IoPort_A
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io_Cfg.o
+ .data.IoPort_B
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io_Cfg.o
+ .data.IoPort_C
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io_Cfg.o
+ .data.IoPort_D
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/02_Io/Io/Io_Cfg.o
+ .text          0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+ .data          0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+ .bss           0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+ .text._ZN12Register8BitD1Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+ .text._ZN12Register8BitD2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+ .text._ZN12Register8BitC1ERVh
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+ .text._ZN12Register8BitC2ERVh
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+ .text._ZN12Register8BitC1Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+ .text._ZN12Register8BitC2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+ .text          0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+ .data          0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+ .bss           0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+ .text._ZN13Register16BitD1Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+ .text._ZN13Register16BitD2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+ .text._ZN13Register16BitC1ERVj
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+ .text._ZN13Register16BitC2ERVj
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+ .text._ZN13Register16BitC1Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+ .text._ZN13Register16BitC2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+ .text          0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .data          0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .bss           0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN6ObjectC2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN6ObjectD2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV15Register16Bit_tVjEC2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV15Register16Bit_tVjEC1Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV15Register16Bit_tVjEC2ERS2_
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV15Register16Bit_tVjEC1ERS2_
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV15Register16Bit_tVjED2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV15Register16Bit_tVjED1Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV15Register16Bit_tVjE11setRegisterERS1_
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV15Register16Bit_tVjE11setRegisterERS2_
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV15Register16Bit_tVjE6setBitEN6Object5Bit_tE
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV15Register16Bit_tVjE8clearBitEN6Object5Bit_tE
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV15Register16Bit_tVjE6getBitEN6Object5Bit_tE
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV14Register8Bit_tVhEC2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV14Register8Bit_tVhEC1Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV14Register8Bit_tVhEC2ERS2_
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV14Register8Bit_tVhEC1ERS2_
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV14Register8Bit_tVhED2Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV14Register8Bit_tVhED1Ev
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV14Register8Bit_tVhE11setRegisterERS1_
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV14Register8Bit_tVhE11setRegisterERS2_
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV14Register8Bit_tVhE6setBitEN6Object5Bit_tE
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV14Register8Bit_tVhE8clearBitEN6Object5Bit_tE
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text._ZN8RegisterIV14Register8Bit_tVhE6getBitEN6Object5Bit_tE
+                0x00000000        0x0 ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+ .text          0x00000000        0x0 ./03_Source/50_LLD/03_PortPin/PortPin.o
+ .data          0x00000000        0x0 ./03_Source/50_LLD/03_PortPin/PortPin.o
+ .bss           0x00000000        0x0 ./03_Source/50_LLD/03_PortPin/PortPin.o
+ .text._ZN7PortPinD0Ev
+                0x00000000        0x0 ./03_Source/50_LLD/03_PortPin/PortPin.o
+ .text._ZN7PortPinD1Ev
+                0x00000000        0x0 ./03_Source/50_LLD/03_PortPin/PortPin.o
+ .text._ZN7PortPinD2Ev
+                0x00000000        0x0 ./03_Source/50_LLD/03_PortPin/PortPin.o
+ .text._ZN7PortPinC1ER8IoPort_t
+                0x00000000        0x0 ./03_Source/50_LLD/03_PortPin/PortPin.o
+ .text._ZN7PortPinC2ER8IoPort_t
+                0x00000000        0x0 ./03_Source/50_LLD/03_PortPin/PortPin.o
+ .text._ZN7PortPinC1Ev
+                0x00000000        0x0 ./03_Source/50_LLD/03_PortPin/PortPin.o
+ .text._ZN7PortPinC2Ev
+                0x00000000        0x0 ./03_Source/50_LLD/03_PortPin/PortPin.o
+ .rodata._ZTV7PortPin
+                0x00000000        0x0 ./03_Source/50_LLD/03_PortPin/PortPin.o
+ .text          0x00000000        0x0 ./03_Source/50_LLD/02_Timer/01_HwTimer/HwTimer.o
+ .data          0x00000000        0x0 ./03_Source/50_LLD/02_Timer/01_HwTimer/HwTimer.o
+ .bss           0x00000000        0x0 ./03_Source/50_LLD/02_Timer/01_HwTimer/HwTimer.o
+ .text          0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+ .data          0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+ .bss           0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+ .text._ZN12HwTimer16BitD1Ev
+                0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+ .text._ZN12HwTimer16BitD2Ev
+                0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+ .text._ZN12HwTimer16BitC1ENS_7Timer_tE
+                0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+ .text._ZN12HwTimer16BitC2ENS_7Timer_tE
+                0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+ .text._ZN12HwTimer16BitC1Ev
+                0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+ .text._ZN12HwTimer16BitC2Ev
+                0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+ .text          0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+ .data          0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+ .bss           0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+ .text._ZN11HwTimer8BitD1Ev
+                0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+ .text._ZN11HwTimer8BitD2Ev
+                0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+ .text._ZN11HwTimer8BitC1ENS_7Timer_tE
+                0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+ .text._ZN11HwTimer8BitC2ENS_7Timer_tE
+                0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+ .text._ZN11HwTimer8BitC1Ev
+                0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+ .text._ZN11HwTimer8BitC2Ev
+                0x00000000        0x0 ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+ .text          0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .data          0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .bss           0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .text._ZN4Port3setEN6Object5Pin_tE
+                0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .text._ZN4Port9setByMaskEh
+                0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .text._ZN4Port5clearEN6Object5Pin_tE
+                0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .text._ZN4Port11clearByMaskEh
+                0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .text._ZN4PortD0Ev
+                0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .text._ZN4PortD1Ev
+                0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .text._ZN4PortD2Ev
+                0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .text._ZN4PortC1ER8IoPort_t
+                0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .text._ZN4PortC2ER8IoPort_t
+                0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .text._ZN4PortC1Ev
+                0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .text._ZN4PortC2Ev
+                0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .rodata._ZTV4Port
+                0x00000000        0x0 ./03_Source/50_LLD/01_Port/Port.o
+ .text          0x00000000        0x0 ./03_Source/20_SYSTEM/01_Os/Os.o
+ .data          0x00000000        0x0 ./03_Source/20_SYSTEM/01_Os/Os.o
+ .bss           0x00000000        0x0 ./03_Source/20_SYSTEM/01_Os/Os.o
+ .text._ZN2OsC2Ev
+                0x00000000        0x0 ./03_Source/20_SYSTEM/01_Os/Os.o
+ .text._ZN2OsC1Ev
+                0x00000000        0x0 ./03_Source/20_SYSTEM/01_Os/Os.o
+ .text._ZN2Os10setupTimerEv
+                0x00000000        0x0 ./03_Source/20_SYSTEM/01_Os/Os.o
+ .text._ZN2Os7initAppEv
+                0x00000000        0x0 ./03_Source/20_SYSTEM/01_Os/Os.o
+ .text._ZN2Os7startOsEv
+                0x00000000        0x0 ./03_Source/20_SYSTEM/01_Os/Os.o
+ .text._ZN2Os5getOsEv
+                0x00000000        0x0 ./03_Source/20_SYSTEM/01_Os/Os.o
+ .text._ZN2Os11setRegisterENS_8RegisterENS_4BitsENS_5ValueE
+                0x00000000        0x0 ./03_Source/20_SYSTEM/01_Os/Os.o
+ .text._ZN2Os5newOsEv
+                0x00000000        0x0 ./03_Source/20_SYSTEM/01_Os/Os.o
+ .text          0x00000000        0x0 ./03_Source/main.o
+ .data          0x00000000        0x0 ./03_Source/main.o
+ .bss           0x00000000        0x0 ./03_Source/main.o
+ .text          0x00000000        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+LOAD ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+LOAD ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+LOAD ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+LOAD ./03_Source/60_SW_BASIC/02_Io/Io/Io_Cfg.o
+LOAD ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+LOAD ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+LOAD ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+LOAD ./03_Source/50_LLD/03_PortPin/PortPin.o
+LOAD ./03_Source/50_LLD/02_Timer/01_HwTimer/HwTimer.o
+LOAD ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+LOAD ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+LOAD ./03_Source/50_LLD/01_Port/Port.o
+LOAD ./03_Source/20_SYSTEM/01_Os/Os.o
+LOAD ./03_Source/main.o
+LOAD d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a
+LOAD d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000       0xb2
+ *(.vectors)
+ .vectors       0x00000000       0x7c d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x0000007c                . = ALIGN (0x2)
+                0x0000007c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000007c        0x0 linker stubs
+ *(.trampolines*)
+                0x0000007c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000007c                __ctors_start = .
+ *(.ctors)
+                0x0000007c                __ctors_end = .
+                0x0000007c                __dtors_start = .
+ *(.dtors)
+                0x0000007c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000007c        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+                0x0000007c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000007c        0xc d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000088       0x16 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000088                __do_copy_data
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000009e        0x4 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+ *(.init9)
+ *(.text)
+ .text          0x000000a2        0x2 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+                0x000000a2                __vector_22
+                0x000000a2                __vector_28
+                0x000000a2                __vector_1
+                0x000000a2                __vector_24
+                0x000000a2                __vector_12
+                0x000000a2                __bad_interrupt
+                0x000000a2                __vector_6
+                0x000000a2                __vector_3
+                0x000000a2                __vector_23
+                0x000000a2                __vector_30
+                0x000000a2                __vector_25
+                0x000000a2                __vector_11
+                0x000000a2                __vector_13
+                0x000000a2                __vector_17
+                0x000000a2                __vector_19
+                0x000000a2                __vector_7
+                0x000000a2                __vector_27
+                0x000000a2                __vector_5
+                0x000000a2                __vector_4
+                0x000000a2                __vector_9
+                0x000000a2                __vector_2
+                0x000000a2                __vector_21
+                0x000000a2                __vector_15
+                0x000000a2                __vector_29
+                0x000000a2                __vector_8
+                0x000000a2                __vector_26
+                0x000000a2                __vector_14
+                0x000000a2                __vector_10
+                0x000000a2                __vector_16
+                0x000000a2                __vector_18
+                0x000000a2                __vector_20
+                0x000000a4                . = ALIGN (0x2)
+ *(.text.*)
+ .text.main     0x000000a4        0xa ./03_Source/main.o
+                0x000000a4                main
+                0x000000ae                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000000ae        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x000000ae                exit
+                0x000000ae                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000000ae        0x4 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000000b2                _etext = .
+
+.data           0x00800100        0x0 load address 0x000000b2
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800100                . = ALIGN (0x2)
+                0x00800100                _edata = .
+                0x00800100                PROVIDE (__data_end, .)
+
+.bss            0x00800100        0x0
+                0x00800100                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ *(COMMON)
+                0x00800100                PROVIDE (__bss_end, .)
+                0x000000b2                __data_load_start = LOADADDR (.data)
+                0x000000b2                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800100        0x0
+                0x00800100                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800100                PROVIDE (__noinit_end, .)
+                0x00800100                _end = .
+                0x00800100                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x36d8
+ *(.stab)
+ .stab          0x00000000      0x438 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+                                0x7c8 (size before relaxing)
+ .stab          0x00000438      0x42c ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+                                0x720 (size before relaxing)
+ .stab          0x00000864      0x42c ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+                                0x6c0 (size before relaxing)
+ .stab          0x00000c90      0x3b4 ./03_Source/60_SW_BASIC/02_Io/Io/Io_Cfg.o
+                                0x3c0 (size before relaxing)
+ .stab          0x00001044      0x3cc ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+                                0x5c4 (size before relaxing)
+ .stab          0x00001410      0x3cc ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+                                0x5c4 (size before relaxing)
+ .stab          0x000017dc      0x3cc ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+                                0xcfc (size before relaxing)
+ .stab          0x00001ba8      0x42c ./03_Source/50_LLD/03_PortPin/PortPin.o
+                                0x600 (size before relaxing)
+ .stab          0x00001fd4      0x378 ./03_Source/50_LLD/02_Timer/01_HwTimer/HwTimer.o
+                                0x384 (size before relaxing)
+ .stab          0x0000234c      0x3cc ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+                                0x54c (size before relaxing)
+ .stab          0x00002718      0x3cc ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+                                0x54c (size before relaxing)
+ .stab          0x00002ae4      0x42c ./03_Source/50_LLD/01_Port/Port.o
+                                0x7b0 (size before relaxing)
+ .stab          0x00002f10      0x390 ./03_Source/20_SYSTEM/01_Os/Os.o
+                                0x624 (size before relaxing)
+ .stab          0x000032a0      0x438 ./03_Source/main.o
+                                0x444 (size before relaxing)
+
+.stabstr        0x00000000     0x2eb9
+ *(.stabstr)
+ .stabstr       0x00000000     0x2eb9 ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(03_Framework.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+HwTimer16Bit::HwTimer16Bit()                      ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+HwTimer16Bit::HwTimer16Bit()                      ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+HwTimer16Bit::HwTimer16Bit(HwTimer16Bit::Timer_t) ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+HwTimer16Bit::HwTimer16Bit(HwTimer16Bit::Timer_t) ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+HwTimer16Bit::~HwTimer16Bit()                     ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+HwTimer16Bit::~HwTimer16Bit()                     ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+HwTimer8Bit::HwTimer8Bit()                        ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+HwTimer8Bit::HwTimer8Bit()                        ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+HwTimer8Bit::HwTimer8Bit(HwTimer8Bit::Timer_t)    ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+HwTimer8Bit::HwTimer8Bit(HwTimer8Bit::Timer_t)    ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+HwTimer8Bit::~HwTimer8Bit()                       ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+HwTimer8Bit::~HwTimer8Bit()                       ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+HwTimer<unsigned char volatile>::HwTimer()        ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+HwTimer<unsigned char volatile>::~HwTimer()       ./03_Source/50_LLD/02_Timer/HwTimer8Bit.o
+HwTimer<unsigned int volatile>::HwTimer()         ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+HwTimer<unsigned int volatile>::~HwTimer()        ./03_Source/50_LLD/02_Timer/HwTimer16Bit.o
+Io::Io()                                          ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+Io::Io()                                          ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+Io::Io(IoPort_t&)                                 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+Io::Io(IoPort_t&)                                 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+Io::~Io()                                         ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+Io::~Io()                                         ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+Io::~Io()                                         ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+IoPinAbs::IoPinAbs()                              ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+IoPinAbs::IoPinAbs()                              ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+                                                  ./03_Source/50_LLD/03_PortPin/PortPin.o
+IoPinAbs::IoPinAbs(IoPort_t&)                     ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+                                                  ./03_Source/50_LLD/03_PortPin/PortPin.o
+IoPinAbs::IoPinAbs(IoPort_t&)                     ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+IoPinAbs::setIo(Object::Status_t)                 ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+                                                  ./03_Source/50_LLD/03_PortPin/PortPin.o
+IoPinAbs::setIoDirection(Io::IODirection_t)       ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+                                                  ./03_Source/50_LLD/03_PortPin/PortPin.o
+IoPinAbs::setIoPort(IoPort_t&)                    ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+                                                  ./03_Source/50_LLD/03_PortPin/PortPin.o
+IoPinAbs::setIoPullUp(Io::IOPullup_t)             ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+                                                  ./03_Source/50_LLD/03_PortPin/PortPin.o
+IoPinAbs::~IoPinAbs()                             ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+IoPinAbs::~IoPinAbs()                             ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+                                                  ./03_Source/50_LLD/03_PortPin/PortPin.o
+IoPinAbs::~IoPinAbs()                             ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+IoPortAbs::IoPortAbs()                            ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+IoPortAbs::IoPortAbs()                            ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+                                                  ./03_Source/50_LLD/01_Port/Port.o
+IoPortAbs::IoPortAbs(IoPort_t&)                   ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+IoPortAbs::IoPortAbs(IoPort_t&)                   ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+                                                  ./03_Source/50_LLD/01_Port/Port.o
+IoPortAbs::setIo(Object::Pin_t, Object::Status_t) ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+                                                  ./03_Source/50_LLD/01_Port/Port.o
+IoPortAbs::setIoDirection(Object::Pin_t, Io::IODirection_t) ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+                                                  ./03_Source/50_LLD/01_Port/Port.o
+IoPortAbs::setIoPort(IoPort_t&)                   ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+                                                  ./03_Source/50_LLD/01_Port/Port.o
+IoPortAbs::setIoPullUp(Object::Pin_t, Io::IOPullup_t) ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+                                                  ./03_Source/50_LLD/01_Port/Port.o
+IoPortAbs::~IoPortAbs()                           ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+                                                  ./03_Source/50_LLD/01_Port/Port.o
+IoPortAbs::~IoPortAbs()                           ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+IoPortAbs::~IoPortAbs()                           ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+IoPort_A                                          ./03_Source/60_SW_BASIC/02_Io/Io/Io_Cfg.o
+IoPort_B                                          ./03_Source/60_SW_BASIC/02_Io/Io/Io_Cfg.o
+IoPort_C                                          ./03_Source/60_SW_BASIC/02_Io/Io/Io_Cfg.o
+IoPort_D                                          ./03_Source/60_SW_BASIC/02_Io/Io/Io_Cfg.o
+Object::Object()                                  ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+Object::~Object()                                 ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+Os::Os()                                          ./03_Source/20_SYSTEM/01_Os/Os.o
+Os::Os()                                          ./03_Source/20_SYSTEM/01_Os/Os.o
+Os::getOs()                                       ./03_Source/20_SYSTEM/01_Os/Os.o
+Os::initApp()                                     ./03_Source/20_SYSTEM/01_Os/Os.o
+Os::me                                            ./03_Source/20_SYSTEM/01_Os/Os.o
+Os::newOs()                                       ./03_Source/20_SYSTEM/01_Os/Os.o
+Os::osCreated                                     ./03_Source/20_SYSTEM/01_Os/Os.o
+Os::setRegister(Os::Register, Os::Bits, Os::Value) ./03_Source/20_SYSTEM/01_Os/Os.o
+Os::setupTimer()                                  ./03_Source/20_SYSTEM/01_Os/Os.o
+Os::startOs()                                     ./03_Source/20_SYSTEM/01_Os/Os.o
+Port::Port()                                      ./03_Source/50_LLD/01_Port/Port.o
+Port::Port()                                      ./03_Source/50_LLD/01_Port/Port.o
+Port::Port(IoPort_t&)                             ./03_Source/50_LLD/01_Port/Port.o
+Port::Port(IoPort_t&)                             ./03_Source/50_LLD/01_Port/Port.o
+Port::clear(Object::Pin_t)                        ./03_Source/50_LLD/01_Port/Port.o
+Port::clearByMask(unsigned char)                  ./03_Source/50_LLD/01_Port/Port.o
+Port::set(Object::Pin_t)                          ./03_Source/50_LLD/01_Port/Port.o
+Port::setByMask(unsigned char)                    ./03_Source/50_LLD/01_Port/Port.o
+Port::~Port()                                     ./03_Source/50_LLD/01_Port/Port.o
+Port::~Port()                                     ./03_Source/50_LLD/01_Port/Port.o
+Port::~Port()                                     ./03_Source/50_LLD/01_Port/Port.o
+PortPin::PortPin()                                ./03_Source/50_LLD/03_PortPin/PortPin.o
+PortPin::PortPin()                                ./03_Source/50_LLD/03_PortPin/PortPin.o
+PortPin::PortPin(IoPort_t&)                       ./03_Source/50_LLD/03_PortPin/PortPin.o
+PortPin::PortPin(IoPort_t&)                       ./03_Source/50_LLD/03_PortPin/PortPin.o
+PortPin::~PortPin()                               ./03_Source/50_LLD/03_PortPin/PortPin.o
+PortPin::~PortPin()                               ./03_Source/50_LLD/03_PortPin/PortPin.o
+PortPin::~PortPin()                               ./03_Source/50_LLD/03_PortPin/PortPin.o
+Register16Bit::Register16Bit()                    ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+Register16Bit::Register16Bit()                    ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+Register16Bit::Register16Bit(unsigned int volatile&) ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+Register16Bit::Register16Bit(unsigned int volatile&) ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+Register16Bit::~Register16Bit()                   ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+Register16Bit::~Register16Bit()                   ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+Register8Bit::Register8Bit()                      ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+Register8Bit::Register8Bit()                      ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+Register8Bit::Register8Bit(unsigned char volatile&) ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+Register8Bit::Register8Bit(unsigned char volatile&) ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+Register8Bit::~Register8Bit()                     ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+Register8Bit::~Register8Bit()                     ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+Register<Register16Bit_t volatile, unsigned int volatile>::Register() ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+Register<Register16Bit_t volatile, unsigned int volatile>::Register() ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+                                                  ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+Register<Register16Bit_t volatile, unsigned int volatile>::Register(unsigned int volatile&) ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+Register<Register16Bit_t volatile, unsigned int volatile>::Register(unsigned int volatile&) ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+Register<Register16Bit_t volatile, unsigned int volatile>::clearBit(Object::Bit_t) ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+Register<Register16Bit_t volatile, unsigned int volatile>::getBit(Object::Bit_t) ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+Register<Register16Bit_t volatile, unsigned int volatile>::setBit(Object::Bit_t) ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+Register<Register16Bit_t volatile, unsigned int volatile>::setRegister(Register16Bit_t volatile&) ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+Register<Register16Bit_t volatile, unsigned int volatile>::setRegister(unsigned int volatile&) ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+Register<Register16Bit_t volatile, unsigned int volatile>::~Register() ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+Register<Register16Bit_t volatile, unsigned int volatile>::~Register() ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+                                                  ./03_Source/60_SW_BASIC/01_Register/Register16Bit/Register16Bit.o
+Register<Register8Bit_t volatile, unsigned char volatile>::Register() ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+Register<Register8Bit_t volatile, unsigned char volatile>::Register() ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+                                                  ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+Register<Register8Bit_t volatile, unsigned char volatile>::Register(unsigned char volatile&) ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+Register<Register8Bit_t volatile, unsigned char volatile>::Register(unsigned char volatile&) ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+Register<Register8Bit_t volatile, unsigned char volatile>::clearBit(Object::Bit_t) ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+Register<Register8Bit_t volatile, unsigned char volatile>::getBit(Object::Bit_t) ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+Register<Register8Bit_t volatile, unsigned char volatile>::setBit(Object::Bit_t) ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+Register<Register8Bit_t volatile, unsigned char volatile>::setRegister(Register8Bit_t volatile&) ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+Register<Register8Bit_t volatile, unsigned char volatile>::setRegister(unsigned char volatile&) ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+Register<Register8Bit_t volatile, unsigned char volatile>::~Register() ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+Register<Register8Bit_t volatile, unsigned char volatile>::~Register() ./03_Source/60_SW_BASIC/01_Register/Register/Register.o
+                                                  ./03_Source/60_SW_BASIC/01_Register/Register8Bit/Register8Bit.o
+__bad_interrupt                                   d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__cxa_pure_virtual                                ./03_Source/50_LLD/01_Port/Port.o
+                                                  ./03_Source/50_LLD/03_PortPin/PortPin.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+__data_end                                        d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__data_load_start                                 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__data_start                                      d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__do_copy_data                                    d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                                                  ./03_Source/50_LLD/01_Port/Port.o
+                                                  ./03_Source/50_LLD/03_PortPin/PortPin.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/Io/Io_Cfg.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+__heap_end                                        d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__init                                            d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__stack                                           d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_1                                        d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_10                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_11                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_12                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_13                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_14                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_15                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_16                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_17                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_18                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_19                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_2                                        d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_20                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_21                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_22                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_23                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_24                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_25                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_26                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_27                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_28                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_29                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_3                                        d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_30                                       d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_4                                        d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_5                                        d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_6                                        d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_7                                        d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_8                                        d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_9                                        d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vector_default                                  d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+__vectors                                         d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+_exit                                             d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+exit                                              d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                                                  d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+main                                              ./03_Source/main.o
+                                                  d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm324pa.o
+operator delete(void*)                            ./03_Source/50_LLD/01_Port/Port.o
+                                                  ./03_Source/50_LLD/03_PortPin/PortPin.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+                                                  ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+operator new(unsigned int)                        ./03_Source/20_SYSTEM/01_Os/Os.o
+vtable for Io                                     ./03_Source/60_SW_BASIC/02_Io/Io/Io.o
+vtable for IoPinAbs                               ./03_Source/60_SW_BASIC/02_Io/IoPinAbs/IoPinAbs.o
+vtable for IoPortAbs                              ./03_Source/60_SW_BASIC/02_Io/IoPortAbs/IoPortAbs.o
+vtable for Port                                   ./03_Source/50_LLD/01_Port/Port.o
+vtable for PortPin                                ./03_Source/50_LLD/03_PortPin/PortPin.o

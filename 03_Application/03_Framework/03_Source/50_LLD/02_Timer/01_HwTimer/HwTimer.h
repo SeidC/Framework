@@ -114,9 +114,40 @@ class HwTimer
 
 /*=== Class Functions ========================================================*/
 	public:	//Functions
+		/**
+		 *  \brief Brief
+		 *  
+		 *  \return Return_Description
+		 *  
+		 *  \details Details
+		 */
 		HwTimer();
+		/**
+		 *  \brief Brief
+		 *  
+		 *  \param [in] timer Parameter_Description
+		 *  \return Return_Description
+		 *  
+		 *  \details Details
+		 */
 		HwTimer(HwTimer_t timer);
+		/**
+		 *  \brief Brief
+		 *  
+		 *  \return Return_Description
+		 *  
+		 *  \details Details
+		 */
 		~HwTimer();
+        		/**
+         *  \brief Brief
+         *  
+         *  \param [in] channel Parameter_Description
+         *  \param [in] status Parameter_Description
+         *  \return Return_Description
+         *  
+         *  \details Details
+         */
         Std_ReturnType setOutputCompareMode(OutputCompareChannel_t channel, OutputCompare_t status);
         
         
@@ -124,6 +155,14 @@ class HwTimer
 	protected: //Functions
 		HwTimer( const HwTimer &c );
 		HwTimer& operator=( const HwTimer &c );
+        		/**
+         *  \brief Brief
+         *  
+         *  \param [in] timer Parameter_Description
+         *  \return Return_Description
+         *  
+         *  \details Details
+         */
         Std_ReturnType setHwRegister(HwTimer_t timer);
 	
 	private: //Functions		
