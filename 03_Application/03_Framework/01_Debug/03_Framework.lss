@@ -1,0 +1,126 @@
+
+03_Framework.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000000b2  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .stab         000036d8  00000000  00000000  00000108  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  2 .stabstr      00002eb9  00000000  00000000  000037e0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	3d c0       	rjmp	.+122    	; 0x7c <__ctors_end>
+   2:	00 00       	nop
+   4:	4e c0       	rjmp	.+156    	; 0xa2 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	4c c0       	rjmp	.+152    	; 0xa2 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	4a c0       	rjmp	.+148    	; 0xa2 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	48 c0       	rjmp	.+144    	; 0xa2 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	46 c0       	rjmp	.+140    	; 0xa2 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	44 c0       	rjmp	.+136    	; 0xa2 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	42 c0       	rjmp	.+132    	; 0xa2 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	40 c0       	rjmp	.+128    	; 0xa2 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3e c0       	rjmp	.+124    	; 0xa2 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	3c c0       	rjmp	.+120    	; 0xa2 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	3a c0       	rjmp	.+116    	; 0xa2 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	38 c0       	rjmp	.+112    	; 0xa2 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	36 c0       	rjmp	.+108    	; 0xa2 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	34 c0       	rjmp	.+104    	; 0xa2 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	32 c0       	rjmp	.+100    	; 0xa2 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	30 c0       	rjmp	.+96     	; 0xa2 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2e c0       	rjmp	.+92     	; 0xa2 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	2c c0       	rjmp	.+88     	; 0xa2 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	2a c0       	rjmp	.+84     	; 0xa2 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	28 c0       	rjmp	.+80     	; 0xa2 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	26 c0       	rjmp	.+76     	; 0xa2 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	24 c0       	rjmp	.+72     	; 0xa2 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	22 c0       	rjmp	.+68     	; 0xa2 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	20 c0       	rjmp	.+64     	; 0xa2 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1e c0       	rjmp	.+60     	; 0xa2 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	1c c0       	rjmp	.+56     	; 0xa2 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	1a c0       	rjmp	.+52     	; 0xa2 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	18 c0       	rjmp	.+48     	; 0xa2 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	16 c0       	rjmp	.+44     	; 0xa2 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	14 c0       	rjmp	.+40     	; 0xa2 <__bad_interrupt>
+	...
+
+0000007c <__ctors_end>:
+  7c:	11 24       	eor	r1, r1
+  7e:	1f be       	out	0x3f, r1	; 63
+  80:	cf ef       	ldi	r28, 0xFF	; 255
+  82:	d8 e0       	ldi	r29, 0x08	; 8
+  84:	de bf       	out	0x3e, r29	; 62
+  86:	cd bf       	out	0x3d, r28	; 61
+
+00000088 <__do_copy_data>:
+  88:	11 e0       	ldi	r17, 0x01	; 1
+  8a:	a0 e0       	ldi	r26, 0x00	; 0
+  8c:	b1 e0       	ldi	r27, 0x01	; 1
+  8e:	e2 eb       	ldi	r30, 0xB2	; 178
+  90:	f0 e0       	ldi	r31, 0x00	; 0
+  92:	02 c0       	rjmp	.+4      	; 0x98 <.do_copy_data_start>
+
+00000094 <.do_copy_data_loop>:
+  94:	05 90       	lpm	r0, Z+
+  96:	0d 92       	st	X+, r0
+
+00000098 <.do_copy_data_start>:
+  98:	a0 30       	cpi	r26, 0x00	; 0
+  9a:	b1 07       	cpc	r27, r17
+  9c:	d9 f7       	brne	.-10     	; 0x94 <.do_copy_data_loop>
+  9e:	02 d0       	rcall	.+4      	; 0xa4 <main>
+  a0:	06 c0       	rjmp	.+12     	; 0xae <_exit>
+
+000000a2 <__bad_interrupt>:
+  a2:	ae cf       	rjmp	.-164    	; 0x0 <__vectors>
+
+000000a4 <main>:
+
+#include <avr/io.h>
+#include <avr/delay.h>
+#include "Port.h"
+
+int main(void)
+  a4:	df 93       	push	r29
+  a6:	cf 93       	push	r28
+  a8:	cd b7       	in	r28, 0x3d	; 61
+  aa:	de b7       	in	r29, 0x3e	; 62
+  ac:	ff cf       	rjmp	.-2      	; 0xac <main+0x8>
+
+000000ae <_exit>:
+  ae:	f8 94       	cli
+
+000000b0 <__stop_program>:
+  b0:	ff cf       	rjmp	.-2      	; 0xb0 <__stop_program>
