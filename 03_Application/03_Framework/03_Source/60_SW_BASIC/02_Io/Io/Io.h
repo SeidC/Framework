@@ -122,33 +122,7 @@ class Io : public Object
 
 
    protected:
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] status Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   virtual void setIo(Status_t status) = 0;
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] dir Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   virtual void setIoDirection(IODirection_t dir) = 0;
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] pullUp Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   virtual void setIoPullUp(IOPullup_t pullUp) = 0;
+
     /**
     *  \brief Brief
     *  
