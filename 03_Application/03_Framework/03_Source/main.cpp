@@ -12,7 +12,7 @@
 
 int main(void)
 {
-
+	Port b;
 
 
 	while(1)

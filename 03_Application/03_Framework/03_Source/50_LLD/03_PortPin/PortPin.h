@@ -93,6 +93,16 @@ class PortPin : public IoPinAbs
 		 *  \details Details
 		 */
 		~PortPin();
+
+	   /**
+		*  \brief Brief
+		*
+		*  \param [in] pin Parameter_Description
+		*  \return Return_Description
+		*
+		*  \details Details
+		*/
+	   void setIoPin(Pin_t pin);
 	protected: //Functions
 			
 	private: //Functions

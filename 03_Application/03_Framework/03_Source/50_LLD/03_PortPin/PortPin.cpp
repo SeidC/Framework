@@ -73,6 +73,11 @@ PortPin::~PortPin(void)
    return;
 }
 
+
+void PortPin::setIoPin(Pin_t pin)
+{
+
+}
 #else
 	#error "Invalid Patch Version"
 #endif
