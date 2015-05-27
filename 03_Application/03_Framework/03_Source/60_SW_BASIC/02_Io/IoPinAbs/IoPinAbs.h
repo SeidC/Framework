@@ -124,33 +124,7 @@ class IoPinAbs : public Io
     *  \details Details
     */
    void setIo(Status_t status);
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] dir Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   void setIoDirection(IODirection_t dir);
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] pullUp Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   void setIoPullUp(IOPullup_t pullUp);
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] port Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   void setIoPort(IoPort_t& port);
+
    private:
 };
 //IoPinAbs

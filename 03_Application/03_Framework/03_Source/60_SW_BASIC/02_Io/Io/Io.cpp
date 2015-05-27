@@ -80,7 +80,88 @@ Io::~Io(void)
 
 
 
+/*******************************************************************************
+ * FUNCTION: void setPort(...)
+ ******************************************************************************/
+Std_ReturnType  Io::setIoPort(IoPort_t& port)
+{
+   ioDdrx.setRegister((*port.ddr));
+   ioPortx.setRegister(*(port.port));
+   ioPinx.setRegister(*(port.pin));
+   return E_OK;
+}
 
+/*******************************************************************************
+ * FUNCTION: void setIoDirection(...)
+ ******************************************************************************/
+Std_ReturnType  Io::setIoDirection(Pin_t pin,IODirection_t dir)
+{
+   Std_ReturnType ret = E_NOK;
+   if (dir == DIGITAL_IN)
+   {
+      ret = ioDdrx.clearBit((Bit_t)pin);
+   }
+   else if (dir == DIGITAL_OUT)
+   {
+      ret = ioDdrx.setBit((Bit_t)pin);
+   }
+   else
+   {
+      /*-- Do Nothing ---*/
+   }
+   return ret;
+}
+
+/*******************************************************************************
+ * FUNCTION: void setIoPullUp(...)
+ ******************************************************************************/
+Std_ReturnType  Io::setIoPullUp(Pin_t pin, IOPullup_t pullUp)
+{
+   Std_ReturnType ret = E_NOK;
+   Status_t stat;
+   stat = ioDdrx.getBit((Bit_t)pin);
+   switch (stat)
+   {
+      case LOW:
+         if (pullUp == PULLUP_ON)
+         {
+            ioPortx.setBit((Bit_t)pin);
+         }
+         else
+         {
+            ioPortx.clearBit((Bit_t)pin);
+         }
+      break;
+      case HIGH:
+         ret = E_W_IO_DIR;
+      break;
+      default:
+         ret = E_NULL_PTR;
+      break;
+   }
+   return E_OK;
+}
+
+/*******************************************************************************
+ * FUNCTION: IODirection_t getIoDirection(...)
+ ******************************************************************************/
+Io::IODirection_t Io::getIoDirection(Pin_t pin)
+{
+   return (IODirection_t)ioDdrx.getBit((Bit_t)pin);
+}
+
+/*******************************************************************************
+ * FUNCTION: IOPullup_t getIoPullupStatus(...)
+ ******************************************************************************/
+Io::IOPullup_t Io::getIoPullupStatus(Pin_t pin)
+{
+   IOPullup_t ret = PULLUP_OFF;
+   if (((IODirection_t)ioDdrx.getBit((Bit_t)pin)) == DIGITAL_IN)
+   {
+      ret = (IOPullup_t) ioPinx.getBit((Bit_t)pin);
+   }
+   return ret;
+}
 
 #else
 	#error "Invalid Patch Version"

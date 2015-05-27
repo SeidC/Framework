@@ -81,36 +81,51 @@ template <typename U, typename D> Register<U,D>::~Register(void)
 /*******************************************************************************
  * FUNCTION: void setBit(...)
  ******************************************************************************/
-template <typename U, typename D> INLINE void Register<U,D>::setBit(Bit_t bit)
+template <typename U, typename D> Std_ReturnType Register<U,D>::setBit(Bit_t bit)
 {
-   D* ptr = (D*) reg;
-   *ptr |= (1 << (D)bit);
-   return;
+   Std_ReturnType ret = E_NULL_PTR;
+   if(reg != NULL)
+   {
+      D* ptr = (D*) reg;
+      *ptr |= (1 << (D)bit);
+      ret = E_OK;
+   }
+   return ret;
 }
 
 /*******************************************************************************
  * FUNCTION: void clearBit(...)
  ******************************************************************************/
-template <typename U, typename D> INLINE void Register<U,D>::clearBit(Bit_t bit)
+template <typename U, typename D> Std_ReturnType Register<U,D>::clearBit(Bit_t bit)
 {
-   D* ptr = (D*) reg;
-   *ptr &= ~(1 << (D)bit);
-   return;
+Std_ReturnType ret = E_NULL_PTR;
+  if(reg != NULL)
+  {
+     D* ptr = (D*) reg;
+     *ptr &= ~(1 << (D)bit);
+     ret = E_OK;
+  }
+  return ret;
 }
 
 /*******************************************************************************
  * FUNCTION: Status_t getBit(...)
  ******************************************************************************/
-template <typename U, typename D> INLINE  typename Register<U,D>::Status_t Register<U,D>::getBit(Bit_t bit)
+template <typename U, typename D>  typename Register<U,D>::Status_t Register<U,D>::getBit(Bit_t bit)
 {
-   D* ptr = (D*) reg;
-   return (Status_t) (*ptr & (1 << (D) bit));
+   Status_t ret = ERROR;
+   if (reg != NULL)
+   {
+      D* ptr = (D*) reg;
+      ret = (Status_t) (*ptr & (1 << (D) bit));
+   }
+   return ret;
 }
 
 /*******************************************************************************
  * FUNCTION: void setRegister(...)
  ******************************************************************************/
-template <typename U, typename D>  INLINE void Register<U,D>::setRegister(U& sReg)
+template <typename U, typename D> void Register<U,D>::setRegister(U& sReg)
 {
    reg = &sReg;
    return;
@@ -119,13 +134,21 @@ template <typename U, typename D>  INLINE void Register<U,D>::setRegister(U& sRe
 /*******************************************************************************
  * FUNCTION: void setRegister(...)
  ******************************************************************************/
-template <typename U, typename D> INLINE void Register<U,D>::setRegister(D& sReg)
+template <typename U, typename D> void Register<U,D>::setRegister(D& sReg)
 {
-   D* ptr = (D*)reg;
-   ptr = &sReg;
+   if (reg != NULL)
+   {
+      D* ptr = (D*)reg;
+      ptr = &sReg;
+   }
    return;
 }
 
+
+template <typename U, typename D>  U* Register<U,D>::getRegister(void)
+{
+   return this->reg;
+}
 
 template class Register<volatile Register16Bit_t, vuint16_t>;
 template class Register<volatile Register8Bit_t, vuint8_t>;

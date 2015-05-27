@@ -8,7 +8,7 @@
  *        Y8a     a8P "8b,   ,aa 88 "8a,   ,d88  Y8a.    .a8P                  *
  *         "Y88888P"   `"Ybbd8"' 88  `"8bbdP"Y8   `"Y8888Y"'                   *
  *                                                                             *
- *          Filename......: [ IoPortAbs.c  ]                                    *
+ *          Filename......: [ AvrDefs.c  ]                                    *
  *          Date..........: [ DATE        ]                                    *
  *          Version.......: [ VERSION     ]                                    *
  *                                                                             *
@@ -20,24 +20,24 @@
  
  
 /*=== Includes ================================================================*/
-#include "IoPortAbs.h"
+#include "AvrDefs.h"
+extern "C" {
+#include "stdlib.h"
 /*=== Version Check ===========================================================*/
 /**
- * Major version of the IoPortAbs module
+ * Major version of the AvrDefs module
  */
-#define IOPORTABS_MAJOR_VERSION_C                                 0u
+#define AVRDEFS_MAJOR_VERSION_C    					0u
 /**
- * Minor version of the IoPortAbs module
+ * Minor version of the AvrDefs module
  */
-#define IOPORTABS_MINOR_VERSION_C                                 1u
+#define AVRDEFS_MINOR_VERSION_C					1u
  /**
-  * Patch version of the IoPortAbs module
+  * Patch version of the AvrDefs module
   */
-#define IOPORTABS_PATCH_VERSION_C                                 0u
+#define AVRDEFS_PATCH_VERSION_C					0u
 
-#if (IOPORTABS_MAJOR_VERSION_C == IOPORTABS_MAJOR_VERSION_H)
-#if (IOPORTABS_MINOR_VERSION_C == IOPORTABS_MINOR_VERSION_H)
-#if (IOPORTABS_PATCH_VERSION_C == IOPORTABS_PATCH_VERSION_H)
+
 
 /*=== Local Defines ===========================================================*/
 
@@ -52,58 +52,57 @@
 /*=== Function Declaration ====================================================*/
 
 /*=== Functions ===============================================================*/
+/*!
+ * \brief Pure-virtual workaround.
+ *
+ * The avr-libc does not support a default implementation for handling
+ * possible pure-virtual calls. This is a short and empty workaround for this.
+ */
+  void __cxa_pure_virtual()
+  {
+    // put error handling here
+  }
 
-/*******************************************************************************
- * FUNCTION: IoPortAbs(...)
- ******************************************************************************/
-IoPortAbs::IoPortAbs()
-{
-   return;
+/*!
+ * \brief New Operator workaround
+ *
+ * The avr-libc does not support a default implementation for the new operator
+ * This implementation is a workaround.
+ */
+  void *operator new(size_t size)
+  {
+    return malloc(size);
+  }
+
+  /*!
+   * \brief New Operator workaround
+   *
+   * The avr-libc does not support a default implementation for the new operator
+   * This implementation is a workaround.
+   */
+  void *operator new[](size_t size)
+  {
+    return malloc(size);
+  }
+  /*!
+   * \brief Delete Operator workaround
+   *
+   * The avr-libc does not support a default implementation for the new operator
+   * This implementation is a workaround.
+   */
+  void operator delete(void* ptr)
+  {
+    free(ptr);
+  }
+
+  /*!
+   * \brief Delete Operator workaround
+   *
+   * The avr-libc does not support a default implementation for the new operator
+   * This implementation is a workaround.
+   */
+  void operator delete[](void* ptr)
+  {
+    free(ptr);
+  }
 }
-
-
-/*******************************************************************************
- * FUNCTION: IoPortAbs(...)
- ******************************************************************************/
-IoPortAbs::IoPortAbs(IoPort_t& port) : Io(port)
-{
-   return;
-}
-
-
-/*******************************************************************************
- * FUNCTION: ~IoPortAbs(...)
- ******************************************************************************/
-IoPortAbs::~IoPortAbs()
-{
-   return;
-}
-
-/*******************************************************************************
- * FUNCTION: void setIo(...)
- ******************************************************************************/
-void IoPortAbs::setIo(Pin_t pin,Status_t status)
-{
-   if(ioDdrx.getBit((Bit_t)pin) == LOW)
-   {
-      if(status == LOW)
-      {
-         ioPortx.setBit((Bit_t)pin);
-      }
-      else
-      {
-         ioPortx.clearBit((Bit_t)pin);
-      }
-   }
-   return;
-}
-
-#else
-	#error "Invalid Patch Version"
-#endif
-#else
-	#error "Invalid Minor Version"
-#endif
-#else
-	#error "Invalid Major Version"
-#endif

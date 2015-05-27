@@ -108,39 +108,8 @@ class IoPortAbs : public Io
     *  \details Details
     */
    void setIo(Pin_t pin, Status_t status);
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] pin Parameter_Description
-    *  \param [in] dir Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   void setIoDirection(Pin_t pin, IODirection_t dir);
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] pin Parameter_Description
-    *  \param [in] pullUp Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   void setIoPullUp(Pin_t pin, IOPullup_t pullUp);
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] port Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   void setIoPort(IoPort_t& port);
 
    protected:
-
-
 
    private:
    IoPortAbs(const IoPortAbs &c);

@@ -135,7 +135,7 @@ class Register : Object
        *  \details Details
        */
        void setRegister(U& sReg);
-      	  /**
+      /**
        *  \brief Brief
        *  
        *  \param [in] sReg Parameter_Description
@@ -144,7 +144,7 @@ class Register : Object
        *  \details Details
        */
        void setRegister(D& sReg);
-      	  /**
+      /**
        *  \brief Brief
        *  
        *  \param [in] bit Parameter_Description
@@ -152,8 +152,8 @@ class Register : Object
        *  
        *  \details Details
        */
-       void setBit(Bit_t bit);
-      	  /**
+       Std_ReturnType setBit(Bit_t bit);
+      /**
        *  \brief Brief
        *  
        *  \param [in] bit Parameter_Description
@@ -161,8 +161,8 @@ class Register : Object
        *  
        *  \details Details
        */
-       void clearBit(Bit_t bit);
-      	  /**
+       Std_ReturnType clearBit(Bit_t bit);
+      /**
        *  \brief Brief
        *  
        *  \param [in] bit Parameter_Description
@@ -171,6 +171,15 @@ class Register : Object
        *  \details Details
        */
        Status_t getBit(Bit_t bit);
+      /**
+       *  \brief Brief
+       *
+       *  \param [in] bit Parameter_Description
+       *  \return Return_Description
+       *
+       *  \details Details
+       */
+       U* getRegister(void);
       
    private:
 
