@@ -78,18 +78,6 @@ void IoPinAbs::setIo(Status_t status)
 
 }
 
-void IoPinAbs::setIoDirection(IODirection_t dir)
-{
-
-}
-void IoPinAbs::setIoPullUp(IOPullup_t pullUp)
-{
-
-}
-void IoPinAbs::setIoPort(IoPort_t& port)
-{
-}
-
 
 #else
 	#error "Invalid Patch Version"

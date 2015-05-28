@@ -21,7 +21,7 @@
 #define PROJECT_H_INCLUDED
  
 /*=== Includes ================================================================*/
-
+#include "AvrDefs.h"
 /**
  * Definition of Project Name
  */

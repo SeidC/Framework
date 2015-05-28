@@ -58,8 +58,9 @@ class Io : public Object
    //Enumerates
    enum IODirection_t
    {
-      DIGITAL_IN = 0x00,
-      DIGITAL_OUT = 0x01
+      DIGITAL_IN      =   0x00,
+      DIGITAL_OUT     =   0x01,
+      DIGITAL_NOT_DEF =   0x02,
    };
 
    enum IORegister_t
@@ -71,8 +72,9 @@ class Io : public Object
 
    enum IOPullup_t
    {
-      PULLUP_OFF = 0x00,
-      PULLUP_ON
+      PULLUP_OFF        = 0x00,
+      PULLUP_ON         = 0x01,
+      PULLUP_NOT_DEF    = 0x02,
    };
    private:
 
@@ -142,7 +144,7 @@ class Io : public Object
     *  
     *  \details Details
     */
-   virtual void setIoDirection(Pin_t pin,IODirection_t dir) = 0;
+   Std_ReturnType setIoDirection(Pin_t pin,IODirection_t dir);
    /**
     *  \brief Brief
     *  
@@ -152,7 +154,7 @@ class Io : public Object
     *  
     *  \details Details
     */
-   virtual void setIoPullUp(Pin_t pin, IOPullup_t pullUp) = 0;
+   Std_ReturnType  setIoPullUp(Pin_t pin, IOPullup_t pullUp);
    /**
     *  \brief Brief
     *  
@@ -161,8 +163,25 @@ class Io : public Object
     *  
     *  \details Details
     */
-   virtual void setIoPort(IoPort_t& port) = 0;
-
+   Std_ReturnType  setIoPort(IoPort_t& port);
+   /**
+    *  \brief Brief
+    *
+    *  \param [in] port Parameter_Description
+    *  \return Return_Description
+    *
+    *  \details Details
+    */
+   IODirection_t getIoDirection(Pin_t pin);
+   /**
+    *  \brief Brief
+    *
+    *  \param [in] port Parameter_Description
+    *  \return Return_Description
+    *
+    *  \details Details
+    */
+   IOPullup_t getIoPullupStatus(Pin_t pin);
 
 
    private:
