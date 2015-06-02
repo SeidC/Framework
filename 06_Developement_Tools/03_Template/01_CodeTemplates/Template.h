@@ -27,15 +27,15 @@
 /**
  * Major version of the Template module
  */
-#define TEMPLATE_MAJOR_VERSION_H    					0u
+#define TEMPLATE_MAJOR_VERSION_H                                      0u
 /**
  * Minor version of the Template module
  */
-#define TEMPLATE_MINOR_VERSION_H					1u
+#define TEMPLATE_MINOR_VERSION_H                                      1u
  /**
   * Patch version of the Template module
   */
-#define TEMPLATE_PATCH_VERSION_H					0u
+#define TEMPLATE_PATCH_VERSION_H                                      0u
 
 /*=== Global Defines ==========================================================*/
 
@@ -51,27 +51,27 @@
 
 class Template
 {
-/*=== Enumerates	===========================================================*/	
-	public: //Enumerates
+/*=== Enumerates   ===========================================================*/	
+	public: 
 	
 	private:
 	
 	protected:
 	
-/*=== Enumerates	===========================================================*/		
-	public: //Parameter			
+/*=== Parameter ===============================================================*/		
+	public: 
 		
-	protected: //Parameter
+	protected: 
 
-	private: //Parameter
+	private:
 	
 /*=== Functions ===============================================================*/
-	public: //Functions
+	public: 
 		 Template();
 		~Template();
-	protected: //Functions
+	protected:
 			
-	private: //Functions
+	private: 
 		Template( const Template &c );
 		Template& operator=( const Template &c );
 		

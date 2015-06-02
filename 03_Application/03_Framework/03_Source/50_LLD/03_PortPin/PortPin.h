@@ -84,7 +84,7 @@ class PortPin : public IoPinAbs
 		  *  
 		  *  \details Details
 		  */
-		 PortPin(IoPort_t& port);
+		 PortPin(Port_t& port);
 		 /**
 		 *  \brief Brief
 		 *  

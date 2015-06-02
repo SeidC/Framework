@@ -63,7 +63,7 @@ Io::Io(void)
 /*******************************************************************************
  * FUNCTION: Io(...)
  ******************************************************************************/
-Io::Io(IoPort_t& port)
+Io::Io(Port_t& port)
 {
    ioDdrx.setRegister((*port.ddr));
    ioPortx.setRegister(*(port.port));
@@ -83,7 +83,7 @@ Io::~Io(void)
 /*******************************************************************************
  * FUNCTION: void setPort(...)
  ******************************************************************************/
-Std_ReturnType  Io::setIoPort(IoPort_t& port)
+Std_ReturnType  Io::setIoPort(Port_t& port)
 {
    ioDdrx.setRegister((*port.ddr));
    ioPortx.setRegister(*(port.port));
@@ -118,7 +118,7 @@ Std_ReturnType  Io::setIoDirection(Pin_t pin,IODirection_t dir)
 Std_ReturnType  Io::setIoPullUp(Pin_t pin, IOPullup_t pullUp)
 {
    Std_ReturnType ret = E_NOK;
-   Status_t stat;
+   Level_t stat;
    stat = ioDdrx.getBit((Bit_t)pin);
    switch (stat)
    {

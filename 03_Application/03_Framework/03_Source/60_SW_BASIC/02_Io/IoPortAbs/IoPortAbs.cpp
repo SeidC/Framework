@@ -65,7 +65,7 @@ IoPortAbs::IoPortAbs()
 /*******************************************************************************
  * FUNCTION: IoPortAbs(...)
  ******************************************************************************/
-IoPortAbs::IoPortAbs(IoPort_t& port) : Io(port)
+IoPortAbs::IoPortAbs(Port_t& port) : Io(port)
 {
    return;
 }
@@ -78,26 +78,6 @@ IoPortAbs::~IoPortAbs()
 {
    return;
 }
-
-/*******************************************************************************
- * FUNCTION: void setIo(...)
- ******************************************************************************/
-void IoPortAbs::setIo(Pin_t pin,Status_t status)
-{
-   if(ioDdrx.getBit((Bit_t)pin) == LOW)
-   {
-      if(status == LOW)
-      {
-         ioPortx.setBit((Bit_t)pin);
-      }
-      else
-      {
-         ioPortx.clearBit((Bit_t)pin);
-      }
-   }
-   return;
-}
-
 #else
 	#error "Invalid Patch Version"
 #endif

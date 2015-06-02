@@ -111,7 +111,7 @@ class Io : public Object
     *  
     *  \details Details
     */
-   Io(IoPort_t& port);
+   Io(Port_t& port);
    /**
     *  \brief Brief
     *  
@@ -121,20 +121,6 @@ class Io : public Object
     */
    virtual ~Io(void);
 
-
-
-   protected:
-
-    /**
-    *  \brief Brief
-    *  
-    *  \param [in] pin Parameter_Description
-    *  \param [in] status Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   virtual void setIo(Pin_t pin, Status_t status) = 0;
    /**
     *  \brief Brief
     *  
@@ -163,26 +149,14 @@ class Io : public Object
     *  
     *  \details Details
     */
-   Std_ReturnType  setIoPort(IoPort_t& port);
-   /**
-    *  \brief Brief
-    *
-    *  \param [in] port Parameter_Description
-    *  \return Return_Description
-    *
-    *  \details Details
-    */
+   Std_ReturnType  setIoPort(Port_t& port);
+
    IODirection_t getIoDirection(Pin_t pin);
-   /**
-    *  \brief Brief
-    *
-    *  \param [in] port Parameter_Description
-    *  \return Return_Description
-    *
-    *  \details Details
-    */
+
    IOPullup_t getIoPullupStatus(Pin_t pin);
 
+
+   protected:
 
    private:
    Io(const Io &c);

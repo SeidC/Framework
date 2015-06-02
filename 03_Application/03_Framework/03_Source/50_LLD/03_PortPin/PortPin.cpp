@@ -60,7 +60,7 @@ PortPin::PortPin(void)
 }
 
 
-PortPin::PortPin(IoPort_t& port) : IoPinAbs(port)
+PortPin::PortPin(Port_t& port) : IoPinAbs(port)
 {
 
    return;

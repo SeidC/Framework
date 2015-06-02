@@ -39,7 +39,7 @@
 /**
  * Configuration for Port A
  */
-IoPort_t IoPort_A =
+Port_t Port_A =
       {
           &DDRA,
           &PORTA,
@@ -49,7 +49,7 @@ IoPort_t IoPort_A =
 /**
  * Configuration for Port B
  */
-IoPort_t IoPort_B =
+Port_t Port_B =
       {
           &DDRB,
           &PORTB,
@@ -59,7 +59,7 @@ IoPort_t IoPort_B =
 /**
  * Configuration for Port C
  */
-IoPort_t IoPort_C =
+Port_t Port_C =
       {
           &DDRC,
           &PORTC,
@@ -69,7 +69,7 @@ IoPort_t IoPort_C =
 /**
  * Configuration for Port D
  */
-IoPort_t IoPort_D =
+Port_t Port_D =
       {
           &DDRD,
           &PORTD,

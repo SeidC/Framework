@@ -53,7 +53,7 @@
 
 /*=== Functions ===============================================================*/
 
-IoPinAbs::IoPinAbs(IoPort_t& port) : Io(port)
+IoPinAbs::IoPinAbs(Port_t& port) : Io(port)
 {
    pin = PIN_NOT_DEEF;
    return;
@@ -73,10 +73,7 @@ IoPinAbs::~IoPinAbs()
    return;
 }
 
-void IoPinAbs::setIo(Status_t status)
-{
 
-}
 
 
 #else

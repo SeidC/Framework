@@ -23,6 +23,8 @@
 /*=== Includes ================================================================*/
 #include "Project.h"
 #include "Io.h"
+#include "IoPinAbs_Interface.h"
+
 
 /*=== Version Check ===========================================================*/
 /**
@@ -50,7 +52,7 @@
 
 /*=== Function Declaration ====================================================*/
 
-class IoPinAbs : public Io
+class IoPinAbs : private Io, public IoPinAbs_Interface
 {
 /*=== Enumerates	===========================================================*/
    public:
@@ -87,7 +89,7 @@ class IoPinAbs : public Io
     *  
     *  \details Details
     */
-   IoPinAbs(IoPort_t& port);
+   IoPinAbs(Port_t& port);
    /**
     *  \brief Brief
     *  
@@ -114,16 +116,9 @@ class IoPinAbs : public Io
 
    public:
 
+
    protected:
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] status Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   void setIo(Status_t status);
+
 
    private:
 };

@@ -8,7 +8,7 @@
  *        Y8a     a8P "8b,   ,aa 88 "8a,   ,d88  Y8a.    .a8P                  *
  *         "Y88888P"   `"Ybbd8"' 88  `"8bbdP"Y8   `"Y8888Y"'                   *
  *                                                                             *
- *          Filename......: [ Port.h  ]                                    *
+ *          Filename......: [ IoPinAbs_Interface.h  ]                                    *
  *          Date..........: [ DATE        ]                                    *
  *          Version.......: [ VERSION     ]                                    *
  *                                                                             *
@@ -17,26 +17,26 @@
  *                                                                             *
  *******************************************************************************/
 
-#ifndef PORT_H_INCLUDED
-#define PORT_H_INCLUDED
- 
+#ifndef IOPINABS_INTERFACE_H_INCLUDED
+#define IOPINABS_INTERFACE_H_INCLUDED
+
 /*=== Includes ================================================================*/
 #include "Project.h"
-#include "IoPortAbs.h"
+#include "Std_Types.h"
 
 /*=== Version Check ===========================================================*/
 /**
- * Major version of the Port module
+ * Major version of the IoPinAbs_Interface module
  */
-#define PORT_MAJOR_VERSION_H                                   0u
+#define IOPINABS_INTERFACE_MAJOR_VERSION_H                            0u
 /**
- * Minor version of the Port module
+ * Minor version of the IoPinAbs_Interface module
  */
-#define PORT_MINOR_VERSION_H                                   1u
- /**
-  * Patch version of the Port module
-  */
-#define PORT_PATCH_VERSION_H                                   0u
+#define IOPINABS_INTERFACE_MINOR_VERSION_H                            1u
+/**
+ * Patch version of the IoPinAbs_Interface module
+ */
+#define IOPINABS_INTERFACE_PATCH_VERSION_H	                         0u
 
 /*=== Global Defines ==========================================================*/
 
@@ -50,53 +50,34 @@
 
 /*=== Function Declaration ====================================================*/
 
-class Port : public IoPortAbs
+class IoPinAbs_Interface : public Object
 {
-/*=== Enumerates ===========================================================*/
+/*=== Enumerates =============================================================*/
    public:
-
-
 
    private:
 
    protected:
 
-/*=== Parameter ===========================================================*/
+/*=== Parameter ==============================================================*/
    public:
 
-
    protected:
+
 
    private:
 
 
 /*=== Functions ===============================================================*/
    public:
-   /**
-    *  \brief Brief
-    *  
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   Port(void);
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] port Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   Port(Port_t& port);
-   /**
-    *  \brief Brief
-    *  
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   ~Port(void);
+      IoPinAbs_Interface() {};
+      virtual ~IoPinAbs_Interface() {};
+      virtual Level_t getPinStatus(void) = 0;
+      virtual void getPin(Pin_t &pin) = 0;
+
+      virtual boolean isOutput(void) = 0;
+      virtual boolean isPullUpEnabled(void) = 0;
+
 
 
 
@@ -104,19 +85,11 @@ class Port : public IoPortAbs
 
 
    private:
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] c Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   Port(const Port &c);
-   Port& operator=(const Port &c);
+      //Functions
+      IoPinAbs_Interface(const IoPinAbs_Interface &c);
+      IoPinAbs_Interface& operator=(const IoPinAbs_Interface &c);
 
 };
-//Port
+//IoPinAbs_Interface
 
-
-#endif // PORT_H_INCLUDED
+#endif // IOPINABS_INTERFACE_H_INCLUDED

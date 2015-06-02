@@ -36,28 +36,28 @@ typedef struct
    vuint8_t* ddr;
    vuint8_t* port;
    vuint8_t* pin;
-}IoPort_t;
+}Port_t;
 
 /*=== Variables (Global) ======================================================*/
 /**
  * Configuration for Port A
  */
-extern IoPort_t IoPort_A;
+extern Port_t Port_A;
 
 /**
  * Configuration for Port B
  */
-extern IoPort_t IoPort_B;
+extern Port_t Port_B;
 
 /**
  * Configuration for Port C
  */
-extern IoPort_t IoPort_C;
+extern Port_t Port_C;
 
 /**
  * Configuration for Port D
  */
-extern IoPort_t IoPort_D;
+extern Port_t Port_D;
 /*=== Variables (Local) =======================================================*/
 
 /*=== Function Declaration ====================================================*/

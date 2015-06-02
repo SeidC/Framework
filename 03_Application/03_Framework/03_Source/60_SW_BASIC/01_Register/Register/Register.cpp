@@ -109,15 +109,15 @@ Std_ReturnType ret = E_NULL_PTR;
 }
 
 /*******************************************************************************
- * FUNCTION: Status_t getBit(...)
+ * FUNCTION: Level_t getBit(...)
  ******************************************************************************/
-template <typename U, typename D>  typename Register<U,D>::Status_t Register<U,D>::getBit(Bit_t bit)
+template <typename U, typename D>  typename Register<U,D>::Level_t Register<U,D>::getBit(Bit_t bit)
 {
-   Status_t ret = ERROR;
+   Level_t ret = ERROR;
    if (reg != NULL)
    {
       D* ptr = (D*) reg;
-      ret = (Status_t) (*ptr & (1 << (D) bit));
+      ret = (Level_t) (*ptr & (1 << (D) bit));
    }
    return ret;
 }

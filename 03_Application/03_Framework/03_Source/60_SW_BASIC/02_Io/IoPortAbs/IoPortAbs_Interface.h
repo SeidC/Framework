@@ -8,7 +8,7 @@
  *        Y8a     a8P "8b,   ,aa 88 "8a,   ,d88  Y8a.    .a8P                  *
  *         "Y88888P"   `"Ybbd8"' 88  `"8bbdP"Y8   `"Y8888Y"'                   *
  *                                                                             *
- *          Filename......: [ Port.h  ]                                    *
+ *          Filename......: [ IoPortAbs_Interface.h  ]                                    *
  *          Date..........: [ DATE        ]                                    *
  *          Version.......: [ VERSION     ]                                    *
  *                                                                             *
@@ -17,26 +17,25 @@
  *                                                                             *
  *******************************************************************************/
 
-#ifndef PORT_H_INCLUDED
-#define PORT_H_INCLUDED
- 
+#ifndef IOPORTABS_INTERFACE_H_INCLUDED
+#define IOPORTABS_INTERFACE_H_INCLUDED
+
 /*=== Includes ================================================================*/
 #include "Project.h"
-#include "IoPortAbs.h"
 
 /*=== Version Check ===========================================================*/
 /**
- * Major version of the Port module
+ * Major version of the IoPortAbs_Interface module
  */
-#define PORT_MAJOR_VERSION_H                                   0u
+#define IOPORTABS_INTERFACE_MAJOR_VERSION_H                            0u
 /**
- * Minor version of the Port module
+ * Minor version of the IoPortAbs_Interface module
  */
-#define PORT_MINOR_VERSION_H                                   1u
- /**
-  * Patch version of the Port module
-  */
-#define PORT_PATCH_VERSION_H                                   0u
+#define IOPORTABS_INTERFACE_MINOR_VERSION_H                            1u
+/**
+ * Patch version of the IoPortAbs_Interface module
+ */
+#define IOPORTABS_INTERFACE_PATCH_VERSION_H	                           0u
 
 /*=== Global Defines ==========================================================*/
 
@@ -50,73 +49,38 @@
 
 /*=== Function Declaration ====================================================*/
 
-class Port : public IoPortAbs
+class IoPortAbs_Interface
 {
-/*=== Enumerates ===========================================================*/
+/*=== Enumerates =============================================================*/
    public:
-
-
 
    private:
 
    protected:
 
-/*=== Parameter ===========================================================*/
+/*=== Parameter ==============================================================*/
    public:
-
-
-   protected:
-
-   private:
-
-
-/*=== Functions ===============================================================*/
-   public:
-   /**
-    *  \brief Brief
-    *  
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   Port(void);
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] port Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   Port(Port_t& port);
-   /**
-    *  \brief Brief
-    *  
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   ~Port(void);
-
-
 
    protected:
 
 
    private:
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] c Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   Port(const Port &c);
-   Port& operator=(const Port &c);
+
+
+      /*=== Functions ===============================================================*/
+   public:
+
+      IoPortAbs_Interface() {};
+      virtual ~IoPortAbs_Interface() {};
+   protected:
+
+
+   private:
+      //Functions
+      IoPortAbs_Interface(const IoPortAbs_Interface &c);
+      IoPortAbs_Interface& operator=(const IoPortAbs_Interface &c);
 
 };
-//Port
+//IoPortAbs_Interface
 
-
-#endif // PORT_H_INCLUDED
+#endif // IOPORTABS_INTERFACE_H_INCLUDED

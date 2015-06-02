@@ -162,7 +162,7 @@ class Object
                PIN_7          =  7,
             };
 
-            enum Status_t
+            enum Level_t
             {
                LOW        =   0x00,
                HIGH       =   0x01,

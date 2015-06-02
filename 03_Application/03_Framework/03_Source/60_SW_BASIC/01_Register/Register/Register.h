@@ -170,7 +170,7 @@ class Register : Object
        *  
        *  \details Details
        */
-       Status_t getBit(Bit_t bit);
+       Level_t getBit(Bit_t bit);
       /**
        *  \brief Brief
        *

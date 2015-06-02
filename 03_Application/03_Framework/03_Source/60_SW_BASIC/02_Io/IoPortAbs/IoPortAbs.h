@@ -23,7 +23,7 @@
 /*=== Includes ================================================================*/
 #include "Project.h"
 #include "Io.h"
-
+#include "IoPortAbs_Interface.h"
 /*=== Version Check ===========================================================*/
 /**
  * Major version of the IoPortAbs module
@@ -50,7 +50,7 @@
 
 /*=== Function Declaration ====================================================*/
 
-class IoPortAbs : public Io
+class IoPortAbs : private Io, public IoPortAbs_Interface
 {
    /*=== Enumerates	===========================================================*/
    public:
@@ -88,7 +88,7 @@ class IoPortAbs : public Io
     *  
     *  \details Details
     */
-   IoPortAbs(IoPort_t& port);
+   IoPortAbs(Port_t& port);
    /**
     *  \brief Brief
     *  
@@ -97,17 +97,6 @@ class IoPortAbs : public Io
     *  \details Details
     */
    ~IoPortAbs();
-
-   /**
-    *  \brief Brief
-    *  
-    *  \param [in] pin Parameter_Description
-    *  \param [in] status Parameter_Description
-    *  \return Return_Description
-    *  
-    *  \details Details
-    */
-   void setIo(Pin_t pin, Status_t status);
 
    protected:
 
