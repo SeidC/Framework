@@ -8,7 +8,7 @@
  *        Y8a     a8P "8b,   ,aa 88 "8a,   ,d88  Y8a.    .a8P                  *
  *         "Y88888P"   `"Ybbd8"' 88  `"8bbdP"Y8   `"Y8888Y"'                   *
  *                                                                             *
- *          Filename......: [ IoPinAbs_Interface.h  ]                                    *
+ *          Filename......: [ IoPinAbs.h  ]                                    *
  *          Date..........: [ DATE        ]                                    *
  *          Version.......: [ VERSION     ]                                    *
  *                                                                             *
@@ -17,26 +17,28 @@
  *                                                                             *
  *******************************************************************************/
 
-#ifndef IOPINABS_INTERFACE_H_INCLUDED
-#define IOPINABS_INTERFACE_H_INCLUDED
+#ifndef IOPINABS_H_INCLUDED
+#define IOPINABS_H_INCLUDED
 
 /*=== Includes ================================================================*/
 #include "Project.h"
-#include "Std_Types.h"
+#include "Io.h"
+#include "IoPinAbs_Interface.h"
+
 
 /*=== Version Check ===========================================================*/
 /**
- * Major version of the IoPinAbs_Interface module
+ * Major version of the IoPinAbs module
  */
-#define IOPINABS_INTERFACE_MAJOR_VERSION_H                            0u
+#define IOPINABS_MAJOR_VERSION_H    					0u
 /**
- * Minor version of the IoPinAbs_Interface module
+ * Minor version of the IoPinAbs module
  */
-#define IOPINABS_INTERFACE_MINOR_VERSION_H                            1u
+#define IOPINABS_MINOR_VERSION_H					1u
 /**
- * Patch version of the IoPinAbs_Interface module
+ * Patch version of the IoPinAbs module
  */
-#define IOPINABS_INTERFACE_PATCH_VERSION_H	                         0u
+#define IOPINABS_PATCH_VERSION_H					0u
 
 /*=== Global Defines ==========================================================*/
 
@@ -50,48 +52,76 @@
 
 /*=== Function Declaration ====================================================*/
 
-class IoPinAbs_Interface : public Object
+class IoPinAbs : private Io, public IoPinAbs_Interface
 {
-/*=== Enumerates =============================================================*/
+/*=== Enumerates	===========================================================*/
    public:
 
    private:
 
    protected:
 
-/*=== Parameter ==============================================================*/
+/*=== Parameter ===========================================================*/
    public:
 
-   protected:
 
+   protected:
+   //Parameter
 
    private:
-
+   Pin_t pin;
 
 /*=== Functions ===============================================================*/
    public:
-      IoPinAbs_Interface() {};
-      virtual ~IoPinAbs_Interface() {};
-      virtual void setPin(Pin_t sPin) = 0;
-      virtual void setPinPort(Port_t &sPort) = 0;
-      virtual Std_ReturnType set(void) = 0;
-      virtual Std_ReturnType set(Level_t level) = 0;
-      virtual Std_ReturnType reset(void) = 0;
-      virtual Std_ReturnType setDir(IODirection_t dir)= 0;
+   /**
+    *  \brief Brief
+    *  
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
+   IoPinAbs();
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] port Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
+   IoPinAbs(Port_t& port);
+   /**
+    *  \brief Brief
+    *  
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
+   ~IoPinAbs();
+
+   protected:
 
 
+   private:
+   /**
+    *  \brief Brief
+    *  
+    *  \param [in] c Parameter_Description
+    *  \return Return_Description
+    *  
+    *  \details Details
+    */
+   IoPinAbs(const IoPinAbs &c);
+   IoPinAbs& operator=(const IoPinAbs &c);
 
+   public:
 
 
    protected:
 
 
    private:
-      //Functions
-      IoPinAbs_Interface(const IoPinAbs_Interface &c);
-      IoPinAbs_Interface& operator=(const IoPinAbs_Interface &c);
-
 };
-//IoPinAbs_Interface
+//IoPinAbs
 
-#endif // IOPINABS_INTERFACE_H_INCLUDED
+#endif // IOPINABS_H_INCLUDED

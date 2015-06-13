@@ -55,6 +55,13 @@ class Io : public Object
 {
 /*=== Enumerates	===========================================================*/
    public:
+   //Enumerates
+   enum IODirection_t
+   {
+      DIGITAL_IN      =   0x00,
+      DIGITAL_OUT     =   0x01,
+      DIGITAL_NOT_DEF =   0x02,
+   };
 
    enum IORegister_t
    {
@@ -89,58 +96,58 @@ class Io : public Object
 /*=== Functions ===============================================================*/
    public:
    /**
-    *  @brief Brief
+    *  \brief Brief
     *  
-    *  @return Return_Description
+    *  \return Return_Description
     *  
-    *  @details Details
+    *  \details Details
     */
    Io(void);
    /**
-    *  @brief Brief
+    *  \brief Brief
     *  
-    *  @param [in] port Parameter_Description
-    *  @return Return_Description
+    *  \param [in] port Parameter_Description
+    *  \return Return_Description
     *  
-    *  @details Details
+    *  \details Details
     */
    Io(Port_t& port);
    /**
-    *  @brief Brief
+    *  \brief Brief
     *  
-    *  @return Return_Description
+    *  \return Return_Description
     *  
-    *  @details Details
+    *  \details Details
     */
    virtual ~Io(void);
 
    /**
-    *  @brief Brief
+    *  \brief Brief
     *  
-    *  @param [in] pin Parameter_Description
-    *  @param [in] dir Parameter_Description
-    *  @return Return_Description
+    *  \param [in] pin Parameter_Description
+    *  \param [in] dir Parameter_Description
+    *  \return Return_Description
     *  
-    *  @details Details
+    *  \details Details
     */
    Std_ReturnType setIoDirection(Pin_t pin,IODirection_t dir);
    /**
-    *  @brief Brief
+    *  \brief Brief
     *  
-    *  @param [in] pin Parameter_Description
-    *  @param [in] pullUp Parameter_Description
-    *  @return Return_Description
+    *  \param [in] pin Parameter_Description
+    *  \param [in] pullUp Parameter_Description
+    *  \return Return_Description
     *  
-    *  @details Details
+    *  \details Details
     */
    Std_ReturnType  setIoPullUp(Pin_t pin, IOPullup_t pullUp);
    /**
-    *  @brief Brief
+    *  \brief Brief
     *  
-    *  @param [in] port Parameter_Description
-    *  @return Return_Description
+    *  \param [in] port Parameter_Description
+    *  \return Return_Description
     *  
-    *  @details Details
+    *  \details Details
     */
    Std_ReturnType  setIoPort(Port_t& port);
 
@@ -148,9 +155,6 @@ class Io : public Object
 
    IOPullup_t getIoPullupStatus(Pin_t pin);
 
-   void getIoPort(Port_t &port);
-
-   Std_ReturnType setIo(Pin_t pin, Level_t level);
 
    protected:
 

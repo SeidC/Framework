@@ -8,7 +8,7 @@
  *        Y8a     a8P "8b,   ,aa 88 "8a,   ,d88  Y8a.    .a8P                  *
  *         "Y88888P"   `"Ybbd8"' 88  `"8bbdP"Y8   `"Y8888Y"'                   *
  *                                                                             *
- *          Filename......: [ IoPinAbs_Interface.h  ]                                    *
+ *          Filename......: [ Register16Bit.c  ]                                    *
  *          Date..........: [ DATE        ]                                    *
  *          Version.......: [ VERSION     ]                                    *
  *                                                                             *
@@ -17,32 +17,33 @@
  *                                                                             *
  *******************************************************************************/
 
-#ifndef IOPINABS_INTERFACE_H_INCLUDED
-#define IOPINABS_INTERFACE_H_INCLUDED
-
+ 
+ 
 /*=== Includes ================================================================*/
-#include "Project.h"
-#include "Std_Types.h"
-
+#include "Register16Bit.h"
 /*=== Version Check ===========================================================*/
 /**
- * Major version of the IoPinAbs_Interface module
+ * Major version of the Register16Bit module
  */
-#define IOPINABS_INTERFACE_MAJOR_VERSION_H                            0u
+#define REGISTER16BIT_MAJOR_VERSION_C                                 0u
 /**
- * Minor version of the IoPinAbs_Interface module
+ * Minor version of the Register16Bit module
  */
-#define IOPINABS_INTERFACE_MINOR_VERSION_H                            1u
-/**
- * Patch version of the IoPinAbs_Interface module
- */
-#define IOPINABS_INTERFACE_PATCH_VERSION_H	                         0u
+#define REGISTER16BIT_MINOR_VERSION_C                                 1u
+ /**
+  * Patch version of the Register16Bit module
+  */
+#define REGISTER16BIT_PATCH_VERSION_C                                 0u
 
-/*=== Global Defines ==========================================================*/
+#if (REGISTER16BIT_MAJOR_VERSION_C == REGISTER16BIT_MAJOR_VERSION_H)
+#if (REGISTER16BIT_MINOR_VERSION_C == REGISTER16BIT_MINOR_VERSION_H)
+#if (REGISTER16BIT_PATCH_VERSION_C == REGISTER16BIT_PATCH_VERSION_H)
 
-/*=== Global Constants ========================================================*/
+/*=== Local Defines ===========================================================*/
 
-/*=== Global Data Types =======================================================*/
+/*=== Local Constants =========================================================*/
+
+/*=== Local Data Types ========================================================*/
 
 /*=== Variables (Global) ======================================================*/
 
@@ -50,48 +51,41 @@
 
 /*=== Function Declaration ====================================================*/
 
-class IoPinAbs_Interface : public Object
-{
-/*=== Enumerates =============================================================*/
-   public:
-
-   private:
-
-   protected:
-
-/*=== Parameter ==============================================================*/
-   public:
-
-   protected:
-
-
-   private:
-
-
 /*=== Functions ===============================================================*/
-   public:
-      IoPinAbs_Interface() {};
-      virtual ~IoPinAbs_Interface() {};
-      virtual void setPin(Pin_t sPin) = 0;
-      virtual void setPinPort(Port_t &sPort) = 0;
-      virtual Std_ReturnType set(void) = 0;
-      virtual Std_ReturnType set(Level_t level) = 0;
-      virtual Std_ReturnType reset(void) = 0;
-      virtual Std_ReturnType setDir(IODirection_t dir)= 0;
+/*******************************************************************************
+ * FUNCTION: Register16Bit(...)
+ ******************************************************************************/
+Register16Bit::Register16Bit(void)
+{
 
+   return;
+}
 
+/*******************************************************************************
+ * FUNCTION: Register16Bit(...)
+ ******************************************************************************/
+Register16Bit::Register16Bit(vuint16_t& sReg)
+{
+   vuint16_t* ptr = (vuint16_t*)reg;
+   ptr = &sReg;
+   return;
+}
 
+/*******************************************************************************
+ * FUNCTION: ~Register16Bit(...)
+ ******************************************************************************/
+Register16Bit::~Register16Bit(void)
+{
 
+   return;
+}
 
-   protected:
-
-
-   private:
-      //Functions
-      IoPinAbs_Interface(const IoPinAbs_Interface &c);
-      IoPinAbs_Interface& operator=(const IoPinAbs_Interface &c);
-
-};
-//IoPinAbs_Interface
-
-#endif // IOPINABS_INTERFACE_H_INCLUDED
+#else
+	#error "Invalid Patch Version"
+#endif
+#else
+	#error "Invalid Minor Version"
+#endif
+#else
+	#error "Invalid Major Version"
+#endif

@@ -30,15 +30,15 @@
 /**
  * Major version of the IoPinAbs module
  */
-#define IOPINABS_MAJOR_VERSION_H    					0u
+#define IOPINABS_MAJOR_VERSION_H                   0u
 /**
  * Minor version of the IoPinAbs module
  */
-#define IOPINABS_MINOR_VERSION_H					1u
+#define IOPINABS_MINOR_VERSION_H                   1u
 /**
  * Patch version of the IoPinAbs module
  */
-#define IOPINABS_PATCH_VERSION_H					0u
+#define IOPINABS_PATCH_VERSION_H                   0u
 
 /*=== Global Defines ==========================================================*/
 
@@ -115,7 +115,13 @@ class IoPinAbs : private Io, public IoPinAbs_Interface
    IoPinAbs& operator=(const IoPinAbs &c);
 
    public:
+   void setPin(Pin_t sPin);
+   void setPinPort(Port_t &sPort);
 
+   Std_ReturnType set(void);
+   Std_ReturnType set(Level_t level);
+   Std_ReturnType reset(void);
+   Std_ReturnType setDir(IODirection_t dir);
 
    protected:
 

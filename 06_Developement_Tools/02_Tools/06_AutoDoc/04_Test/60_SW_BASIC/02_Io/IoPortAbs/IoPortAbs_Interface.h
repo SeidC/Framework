@@ -8,7 +8,7 @@
  *        Y8a     a8P "8b,   ,aa 88 "8a,   ,d88  Y8a.    .a8P                  *
  *         "Y88888P"   `"Ybbd8"' 88  `"8bbdP"Y8   `"Y8888Y"'                   *
  *                                                                             *
- *          Filename......: [ IoPinAbs_Interface.h  ]                                    *
+ *          Filename......: [ IoPortAbs_Interface.h  ]                                    *
  *          Date..........: [ DATE        ]                                    *
  *          Version.......: [ VERSION     ]                                    *
  *                                                                             *
@@ -17,26 +17,25 @@
  *                                                                             *
  *******************************************************************************/
 
-#ifndef IOPINABS_INTERFACE_H_INCLUDED
-#define IOPINABS_INTERFACE_H_INCLUDED
+#ifndef IOPORTABS_INTERFACE_H_INCLUDED
+#define IOPORTABS_INTERFACE_H_INCLUDED
 
 /*=== Includes ================================================================*/
 #include "Project.h"
-#include "Std_Types.h"
 
 /*=== Version Check ===========================================================*/
 /**
- * Major version of the IoPinAbs_Interface module
+ * Major version of the IoPortAbs_Interface module
  */
-#define IOPINABS_INTERFACE_MAJOR_VERSION_H                            0u
+#define IOPORTABS_INTERFACE_MAJOR_VERSION_H                            0u
 /**
- * Minor version of the IoPinAbs_Interface module
+ * Minor version of the IoPortAbs_Interface module
  */
-#define IOPINABS_INTERFACE_MINOR_VERSION_H                            1u
+#define IOPORTABS_INTERFACE_MINOR_VERSION_H                            1u
 /**
- * Patch version of the IoPinAbs_Interface module
+ * Patch version of the IoPortAbs_Interface module
  */
-#define IOPINABS_INTERFACE_PATCH_VERSION_H	                         0u
+#define IOPORTABS_INTERFACE_PATCH_VERSION_H	                           0u
 
 /*=== Global Defines ==========================================================*/
 
@@ -50,7 +49,7 @@
 
 /*=== Function Declaration ====================================================*/
 
-class IoPinAbs_Interface : public Object
+class IoPortAbs_Interface
 {
 /*=== Enumerates =============================================================*/
    public:
@@ -68,30 +67,20 @@ class IoPinAbs_Interface : public Object
    private:
 
 
-/*=== Functions ===============================================================*/
+      /*=== Functions ===============================================================*/
    public:
-      IoPinAbs_Interface() {};
-      virtual ~IoPinAbs_Interface() {};
-      virtual void setPin(Pin_t sPin) = 0;
-      virtual void setPinPort(Port_t &sPort) = 0;
-      virtual Std_ReturnType set(void) = 0;
-      virtual Std_ReturnType set(Level_t level) = 0;
-      virtual Std_ReturnType reset(void) = 0;
-      virtual Std_ReturnType setDir(IODirection_t dir)= 0;
 
-
-
-
-
+      IoPortAbs_Interface() {};
+      virtual ~IoPortAbs_Interface() {};
    protected:
 
 
    private:
       //Functions
-      IoPinAbs_Interface(const IoPinAbs_Interface &c);
-      IoPinAbs_Interface& operator=(const IoPinAbs_Interface &c);
+      IoPortAbs_Interface(const IoPortAbs_Interface &c);
+      IoPortAbs_Interface& operator=(const IoPortAbs_Interface &c);
 
 };
-//IoPinAbs_Interface
+//IoPortAbs_Interface
 
-#endif // IOPINABS_INTERFACE_H_INCLUDED
+#endif // IOPORTABS_INTERFACE_H_INCLUDED

@@ -73,8 +73,40 @@ IoPinAbs::~IoPinAbs()
    return;
 }
 
+void IoPinAbs::setPin(Pin_t sPin)
+{
+   pin = sPin;
+   return;
+}
 
 
+void IoPinAbs::setPinPort(Port_t &sPort)
+{
+   setIoPort(sPort);
+   return;
+}
+
+
+Std_ReturnType IoPinAbs::set(void)
+{
+   return setIo(pin,HIGH);
+}
+
+
+Std_ReturnType IoPinAbs::set(IoPinAbs::Level_t level)
+{
+   return setIo(pin,level);
+}
+
+Std_ReturnType IoPinAbs::reset(void)
+{
+   return setIo(pin,LOW);
+}
+
+Std_ReturnType IoPinAbs::setDir(IODirection_t dir)
+{
+   return setIoDirection(pin,dir);
+}
 
 #else
 	#error "Invalid Patch Version"

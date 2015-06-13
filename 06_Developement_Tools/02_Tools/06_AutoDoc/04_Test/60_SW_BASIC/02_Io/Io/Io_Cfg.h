@@ -27,7 +27,6 @@
 /*=== Global Constants ========================================================*/
 
 /*=== Global Data Types =======================================================*/
-
 /**
  * Type definition to configure the Port module.
  * This type is needed to initialize a Port.
@@ -37,10 +36,7 @@ typedef struct
    vuint8_t* ddr;
    vuint8_t* port;
    vuint8_t* pin;
-
 }Port_t;
-
-
 
 /*=== Variables (Global) ======================================================*/
 /**
@@ -62,7 +58,6 @@ extern Port_t Port_C;
  * Configuration for Port D
  */
 extern Port_t Port_D;
-
 /*=== Variables (Local) =======================================================*/
 
 /*=== Function Declaration ====================================================*/

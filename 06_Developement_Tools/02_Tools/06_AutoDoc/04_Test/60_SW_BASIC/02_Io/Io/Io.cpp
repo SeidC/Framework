@@ -8,7 +8,7 @@
  *        Y8a     a8P "8b,   ,aa 88 "8a,   ,d88  Y8a.    .a8P                  *
  *         "Y88888P"   `"Ybbd8"' 88  `"8bbdP"Y8   `"Y8888Y"'                   *
  *                                                                             *
- *          Filename......: [ Register.c  ]                                    *
+ *          Filename......: [ Io.c  ]                                    *
  *          Date..........: [ DATE        ]                                    *
  *          Version.......: [ VERSION     ]                                    *
  *                                                                             *
@@ -17,25 +17,27 @@
  *                                                                             *
  *******************************************************************************/
 
+ 
+ 
 /*=== Includes ================================================================*/
-#include "Register.h"
+#include "Io.h"
 /*=== Version Check ===========================================================*/
 /**
- * Major version of the Register module
+ * Major version of the Io module
  */
-#define REGISTER_MAJOR_VERSION_C                   0u
+#define IO_MAJOR_VERSION_C                                 0u
 /**
- * Minor version of the Register module
+ * Minor version of the Io module
  */
-#define REGISTER_MINOR_VERSION_C                   1u
-/**
- * Patch version of the Register module
- */
-#define REGISTER_PATCH_VERSION_C                   0u
+#define IO_MINOR_VERSION_C                                 1u
+ /**
+  * Patch version of the Io module
+  */
+#define IO_PATCH_VERSION_C                                 0u
 
-#if (REGISTER_MAJOR_VERSION_C == REGISTER_MAJOR_VERSION_H)
-#if (REGISTER_MINOR_VERSION_C == REGISTER_MINOR_VERSION_H)
-#if (REGISTER_PATCH_VERSION_C == REGISTER_PATCH_VERSION_H)
+#if (IO_MAJOR_VERSION_C == IO_MAJOR_VERSION_H)
+#if (IO_MINOR_VERSION_C == IO_MINOR_VERSION_H)
+#if (IO_PATCH_VERSION_C == IO_PATCH_VERSION_H)
 
 /*=== Local Defines ===========================================================*/
 
@@ -51,115 +53,122 @@
 
 /*=== Functions ===============================================================*/
 /*******************************************************************************
- * FUNCTION: Register(...)
+ * FUNCTION: Io(...)
  ******************************************************************************/
-template <typename U, typename D> Register<U,D>::Register(void)
+Io::Io(void)
 {
-   reg = NULL;
-   return;
+
 }
 
 /*******************************************************************************
- * FUNCTION: Register(...)
+ * FUNCTION: Io(...)
  ******************************************************************************/
-template <typename U, typename D> Register<U,D>::Register(D& sReg)
+Io::Io(Port_t& port)
 {
-   D* ptr = (D*) reg;
-   ptr = &sReg;
-   return;
+   ioDdrx.setRegister((*port.ddr));
+   ioPortx.setRegister(*(port.port));
+   ioPinx.setRegister(*(port.pin));
 }
 
 /*******************************************************************************
- * FUNCTION: ~Register(...)
+ * FUNCTION: ~Io(...)
  ******************************************************************************/
-template <typename U, typename D> Register<U,D>::~Register(void)
+Io::~Io(void)
 {
-   reg = NULL;
-   return;
+
+}
+
+
+
+/*******************************************************************************
+ * FUNCTION: void setPort(...)
+ ******************************************************************************/
+Std_ReturnType  Io::setIoPort(Port_t& port)
+{
+   ioDdrx.setRegister((*port.ddr));
+   ioPortx.setRegister(*(port.port));
+   ioPinx.setRegister(*(port.pin));
+   return E_OK;
 }
 
 /*******************************************************************************
- * FUNCTION: void setBit(...)
+ * FUNCTION: void setIoDirection(...)
  ******************************************************************************/
-template <typename U, typename D> Std_ReturnType Register<U,D>::setBit(Bit_t bit)
+Std_ReturnType  Io::setIoDirection(Pin_t pin,IODirection_t dir)
 {
-   Std_ReturnType ret = E_NULL_PTR;
-   if(reg != NULL)
+   Std_ReturnType ret = E_NOK;
+   if (dir == DIGITAL_IN)
    {
-      D* ptr = (D*) reg;
-      *ptr |= (1 << (D)bit);
-      ret = E_OK;
+      ret = ioDdrx.clearBit((Bit_t)pin);
+   }
+   else if (dir == DIGITAL_OUT)
+   {
+      ret = ioDdrx.setBit((Bit_t)pin);
+   }
+   else
+   {
+      /*-- Do Nothing ---*/
    }
    return ret;
 }
 
 /*******************************************************************************
- * FUNCTION: void clearBit(...)
+ * FUNCTION: void setIoPullUp(...)
  ******************************************************************************/
-template <typename U, typename D> Std_ReturnType Register<U,D>::clearBit(Bit_t bit)
+Std_ReturnType  Io::setIoPullUp(Pin_t pin, IOPullup_t pullUp)
 {
-Std_ReturnType ret = E_NULL_PTR;
-  if(reg != NULL)
-  {
-     D* ptr = (D*) reg;
-     *ptr &= ~(1 << (D)bit);
-     ret = E_OK;
-  }
-  return ret;
+   Std_ReturnType ret = E_NOK;
+   Level_t stat;
+   stat = ioDdrx.getBit((Bit_t)pin);
+   switch (stat)
+   {
+      case LOW:
+         if (pullUp == PULLUP_ON)
+         {
+            ioPortx.setBit((Bit_t)pin);
+         }
+         else
+         {
+            ioPortx.clearBit((Bit_t)pin);
+         }
+      break;
+      case HIGH:
+         ret = E_W_IO_DIR;
+      break;
+      default:
+         ret = E_NULL_PTR;
+      break;
+   }
+   return E_OK;
 }
 
 /*******************************************************************************
- * FUNCTION: Level_t getBit(...)
+ * FUNCTION: IODirection_t getIoDirection(...)
  ******************************************************************************/
-template <typename U, typename D>  typename Register<U,D>::Level_t Register<U,D>::getBit(Bit_t bit)
+Io::IODirection_t Io::getIoDirection(Pin_t pin)
 {
-   Level_t ret = ERROR;
-   if (reg != NULL)
+   return (IODirection_t)ioDdrx.getBit((Bit_t)pin);
+}
+
+/*******************************************************************************
+ * FUNCTION: IOPullup_t getIoPullupStatus(...)
+ ******************************************************************************/
+Io::IOPullup_t Io::getIoPullupStatus(Pin_t pin)
+{
+   IOPullup_t ret = PULLUP_OFF;
+   if (((IODirection_t)ioDdrx.getBit((Bit_t)pin)) == DIGITAL_IN)
    {
-      D* ptr = (D*) reg;
-      ret = (Level_t) (*ptr & (1 << (D) bit));
+      ret = (IOPullup_t) ioPinx.getBit((Bit_t)pin);
    }
    return ret;
 }
 
-/*******************************************************************************
- * FUNCTION: void setRegister(...)
- ******************************************************************************/
-template <typename U, typename D> void Register<U,D>::setRegister(U& sReg)
-{
-   reg = &sReg;
-   return;
-}
-
-/*******************************************************************************
- * FUNCTION: void setRegister(...)
- ******************************************************************************/
-template <typename U, typename D> void Register<U,D>::setRegister(D& sReg)
-{
-   if (reg != NULL)
-   {
-      D* ptr = (D*)reg;
-      ptr = &sReg;
-   }
-   return;
-}
-
-
-template <typename U, typename D>  D* Register<U,D>::getRegister(void)
-{
-   return (D*)this->reg;
-}
-
-template class Register<volatile Register16Bit_t, vuint16_t>;
-template class Register<volatile Register8Bit_t, vuint8_t>;
-
-
 #else
-#error "Invalid Patch Version"
+	#error "Invalid Patch Version"
 #endif
 #else
-#error "Invalid Minor Version"
+	#error "Invalid Minor Version"
 #endif
 #else
-#error "Invalid Major Version"
+	#error "Invalid Major Version"
 #endif

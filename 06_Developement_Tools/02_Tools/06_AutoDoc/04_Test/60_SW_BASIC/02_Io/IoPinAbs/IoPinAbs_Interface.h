@@ -72,13 +72,11 @@ class IoPinAbs_Interface : public Object
    public:
       IoPinAbs_Interface() {};
       virtual ~IoPinAbs_Interface() {};
-      virtual void setPin(Pin_t sPin) = 0;
-      virtual void setPinPort(Port_t &sPort) = 0;
-      virtual Std_ReturnType set(void) = 0;
-      virtual Std_ReturnType set(Level_t level) = 0;
-      virtual Std_ReturnType reset(void) = 0;
-      virtual Std_ReturnType setDir(IODirection_t dir)= 0;
+      virtual Level_t getPinStatus(void) = 0;
+      virtual void getPin(Pin_t &pin) = 0;
 
+      virtual boolean isOutput(void) = 0;
+      virtual boolean isPullUpEnabled(void) = 0;
 
 
 

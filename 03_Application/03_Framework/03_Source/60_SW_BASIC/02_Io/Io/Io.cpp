@@ -68,6 +68,7 @@ Io::Io(Port_t& port)
    ioDdrx.setRegister((*port.ddr));
    ioPortx.setRegister(*(port.port));
    ioPinx.setRegister(*(port.pin));
+
 }
 
 /*******************************************************************************
@@ -97,17 +98,24 @@ Std_ReturnType  Io::setIoPort(Port_t& port)
 Std_ReturnType  Io::setIoDirection(Pin_t pin,IODirection_t dir)
 {
    Std_ReturnType ret = E_NOK;
-   if (dir == DIGITAL_IN)
+   if (pin != PIN_NOT_DEEF)
    {
-      ret = ioDdrx.clearBit((Bit_t)pin);
-   }
-   else if (dir == DIGITAL_OUT)
-   {
-      ret = ioDdrx.setBit((Bit_t)pin);
+      if (dir == DIGITAL_IN)
+      {
+         ret = ioDdrx.clearBit((Bit_t)pin);
+      }
+      else if (dir == DIGITAL_OUT)
+      {
+         ret = ioDdrx.setBit((Bit_t)pin);
+      }
+      else
+      {
+         /*-- Do Nothing ---*/
+      }
    }
    else
    {
-      /*-- Do Nothing ---*/
+      ret = E_PIN_NOT_DEF;
    }
    return ret;
 }
@@ -133,7 +141,7 @@ Std_ReturnType  Io::setIoPullUp(Pin_t pin, IOPullup_t pullUp)
          }
       break;
       case HIGH:
-         ret = E_W_IO_DIR;
+         ret = E_WRONG_IO_DIR;
       break;
       default:
          ret = E_NULL_PTR;
@@ -159,6 +167,35 @@ Io::IOPullup_t Io::getIoPullupStatus(Pin_t pin)
    if (((IODirection_t)ioDdrx.getBit((Bit_t)pin)) == DIGITAL_IN)
    {
       ret = (IOPullup_t) ioPinx.getBit((Bit_t)pin);
+   }
+   return ret;
+}
+
+
+void Io::getIoPort(Port_t &port)
+{
+
+   port.ddr = ioDdrx.getRegister();
+   port.pin = ioPinx.getRegister();
+   port.port= ioPortx.getRegister();
+   return;
+}
+
+
+Std_ReturnType Io::setIo(Pin_t pin, Level_t level)
+{
+   Std_ReturnType ret = E_PIN_NOT_DEF;
+   if(pin != PIN_NOT_DEEF)
+   {
+      if (level == HIGH)
+      {
+         ioPortx.setBit((Bit_t)pin);
+      }
+      else
+      {
+         ioPortx.clearBit((Bit_t)pin);
+      }
+      ret = E_OK;
    }
    return ret;
 }

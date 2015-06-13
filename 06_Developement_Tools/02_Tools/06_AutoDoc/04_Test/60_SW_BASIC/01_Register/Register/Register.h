@@ -179,7 +179,7 @@ class Register : Object
        *
        *  \details Details
        */
-       D* getRegister(void);
+       U* getRegister(void);
       
    private:
 

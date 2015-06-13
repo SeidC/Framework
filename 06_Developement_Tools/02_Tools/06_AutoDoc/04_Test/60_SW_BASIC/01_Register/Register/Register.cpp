@@ -145,9 +145,9 @@ template <typename U, typename D> void Register<U,D>::setRegister(D& sReg)
 }
 
 
-template <typename U, typename D>  D* Register<U,D>::getRegister(void)
+template <typename U, typename D>  U* Register<U,D>::getRegister(void)
 {
-   return (D*)this->reg;
+   return this->reg;
 }
 
 template class Register<volatile Register16Bit_t, vuint16_t>;

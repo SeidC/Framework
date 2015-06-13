@@ -69,23 +69,30 @@ typedef volatile uint16_t vuint16_t;
 /**
  * Return value for NOT OK
  */
-#define E_NOK                 0x00
+#define E_NOK                    0x00
 
 /**
  * Return value for OK
  */
-#define E_OK                  0x01
+#define E_OK                     0x01
 
 /**
  * Return value for NULL_PTR
  */
-#define E_NULL_PTR            0x02
+#define E_NULL_PTR               0x02
 
 
 /**
  * Return value for Wrong IO Direction
  */
-#define E_W_IO_DIR            0x03
+#define E_WRONG_IO_DIR            0x03
+
+/**
+ *
+ */
+#define E_PIN_NOT_DEF             0x04
+
+
 /*--- SETTER MACROS --------------------------------------------------------*/
 #define SET_BIT(reg_b,bit_b)			        \
 	(reg_b |= (1 << bit_b))
@@ -167,6 +174,13 @@ class Object
                LOW        =   0x00,
                HIGH       =   0x01,
                ERROR      =   0x02,
+            };
+
+            enum IODirection_t
+            {
+               DIGITAL_IN      =   0x00,
+               DIGITAL_OUT     =   0x01,
+               DIGITAL_NOT_DEF =   0x02,
             };
          protected:   //Parameter
 
