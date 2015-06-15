@@ -22,6 +22,7 @@
 
 /*=== Includes ================================================================*/
 #include "Project.h"
+#include "Io_Interface.h"
 
 /*=== Version Check ===========================================================*/
 /**
@@ -49,7 +50,7 @@
 
 /*=== Function Declaration ====================================================*/
 
-class IoPortAbs_Interface
+class IoPortAbs_Interface : public Io_Interface
 {
 /*=== Enumerates =============================================================*/
    public:

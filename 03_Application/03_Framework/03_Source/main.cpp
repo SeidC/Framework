@@ -13,11 +13,9 @@
 
 int main(void)
 {
-	Port b;
-	PortPin a;
-	PortPin c;
 	PortPin d;
-
+	d.setPort(Port_D);
+	d.setPin(PortPin::PIN_5);
 	d.setDir(PortPin::DIGITAL_OUT);
 
 

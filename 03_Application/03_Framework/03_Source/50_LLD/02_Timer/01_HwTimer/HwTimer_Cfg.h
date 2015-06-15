@@ -162,7 +162,7 @@
 #define GET_HW_TIMER_REGISTER_ICR3()		\
 		(ICR3)
 */
-	#error "No configuration for the current device"	
+	//#error "No configuration for the current device"
 #endif
 /*=== Global Data Types =======================================================*/
 

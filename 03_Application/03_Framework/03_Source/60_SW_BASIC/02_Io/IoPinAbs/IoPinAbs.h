@@ -123,6 +123,9 @@ class IoPinAbs : private Io, public IoPinAbs_Interface
    Std_ReturnType reset(void);
    Std_ReturnType setDir(IODirection_t dir);
 
+   Std_ReturnType setPort(Port_t &sPort);
+   void getPort(Port_t &sPort);
+
    protected:
 
 

@@ -108,6 +108,17 @@ Std_ReturnType IoPinAbs::setDir(IODirection_t dir)
    return setIoDirection(pin,dir);
 }
 
+Std_ReturnType IoPinAbs::setPort(Port_t &sPort)
+{
+   return setIoPort(sPort);
+}
+
+
+void IoPinAbs::getPort(Port_t &sPort)
+{
+   getIoPort(sPort);
+   return;
+}
 #else
 	#error "Invalid Patch Version"
 #endif

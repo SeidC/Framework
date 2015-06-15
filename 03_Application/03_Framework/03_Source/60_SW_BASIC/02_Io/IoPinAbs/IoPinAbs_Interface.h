@@ -23,6 +23,7 @@
 /*=== Includes ================================================================*/
 #include "Project.h"
 #include "Std_Types.h"
+#include "Io_Interface.h"
 
 /*=== Version Check ===========================================================*/
 /**
@@ -50,7 +51,7 @@
 
 /*=== Function Declaration ====================================================*/
 
-class IoPinAbs_Interface : public Object
+class IoPinAbs_Interface : public Io_Interface
 {
 /*=== Enumerates =============================================================*/
    public:
@@ -78,10 +79,6 @@ class IoPinAbs_Interface : public Object
       virtual Std_ReturnType set(Level_t level) = 0;
       virtual Std_ReturnType reset(void) = 0;
       virtual Std_ReturnType setDir(IODirection_t dir)= 0;
-
-
-
-
 
    protected:
 
